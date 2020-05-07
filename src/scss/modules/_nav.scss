@@ -1,0 +1,15 @@
+/* Navigation
+-------------------------------------------------------------- */
+.nav {
+    display:inline-block;
+    float:right;
+    position:relative;
+}
+
+.nav__link {
+    display:inline-block;
+    font-size: $beta-size;
+    line-height: 1; 
+    position:relative;
+    margin-left: $baseline;
+}

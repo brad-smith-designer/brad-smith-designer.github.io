@@ -248,7 +248,7 @@ gulp.task('js', () => {
 gulp.task('html', html);
 gulp.task('scss', scss);
 gulp.task('static', static);
-gulp.task('img', img); 
+gulp.task('img', img);
 gulp.task('js-sri', () => {
 	runSequence('jsCore', ['html']);
 })

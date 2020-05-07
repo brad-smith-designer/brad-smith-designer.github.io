@@ -1,0 +1,56 @@
+---
+title: Brad Smith
+---
+{% extends 'layouts/default.html' %}
+{% block content %}
+
+<div class="project">
+
+    <div class="project-info">
+        <div class="wrap">
+            <h1 class="project-info__title">Hemp Eyewear</h1>
+            <div class="row clearfix">
+                <ul class="col xxsmall-12 xsmall-12 small-2 medium-3 large-4 categories">
+                    <li class="categories__item">Branding</li>
+                    <li class="categories__item">Web</li>
+                    <li class="categories__item">Print</li>
+                </ul>
+                <div class="col xxsmall-12 xsmall-12 small-10 medium-9 large-8 project-info__description">
+                    <p>Product design student Sam Whitten and I teamed up to create the world's first commercially available sustainable hemp sunglasses. Together we built a brand and I continue to provide design support.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project-gallery">
+        <div class="wrap">
+            <div class="row project-gallery__image clearfix">
+                <div class="col xxsmall-12 xsmall-12 small-12 medium-12 large-12">
+                    <div class="image">
+                        <img src="/static/img/hemp-eyewear-1-1000x600.jpg"/>
+                        <span class="image__caption">Photography by Matt Beech</span>
+                    </div>
+                    <div class="image">
+                        <img src="/static/img/hemp-eyewear-2.jpg"/>
+                        <span class="image__caption">Presentation slides</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row project-gallery__info clearfix">
+                <div class="col xxsmall-12 xsmall-12 small-12 medium-3 large-4">
+                    <h2 class="project-gallery__subtitle">Website</h2>
+                </div>
+                <div class="col xxsmall-12 xsmall-12 small-12 medium-9 large-8">
+                    <p>A new site was designed and built to reflect the refreshed brand, with a focus on e-commerce and built on the Shopify platform.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include "partials/project-list--project.html" %}
+
+
+
+
+
+{% endblock %}
