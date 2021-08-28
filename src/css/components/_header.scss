@@ -1,0 +1,37 @@
+.header {
+    display:block;
+    padding: var(--baseline-medium);
+    position:absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.header--home {
+    color: var(--white);
+    .nav__item {
+        color: var(--light-grey-2);
+    }
+}
+
+.header--project {
+    color: var(--offblack);
+    .nav__item {
+        color: var(--offblack);
+    }
+    .header__logo {
+        fill: var(--offblack);
+    }
+}
+
+.header__logo {
+    fill: var(--light-grey-2);
+    width: 100px;
+}
+
+.header__container {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position:relative;
+    width:100%;
+}

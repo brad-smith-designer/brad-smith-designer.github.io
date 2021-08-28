@@ -1,6 +1,10 @@
 .wrap {
     @include wrap;
 }
+
+.wrap--wide {
+    max-width:none;
+}
 .row {
     display: flex;
     align-items: stretch;

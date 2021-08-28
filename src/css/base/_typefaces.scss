@@ -1,26 +1,26 @@
-@font-face {
-  font-family: system;
-  font-style: normal;
-  font-weight: 300;
-  src: local(".SFNSText-Light"),
-       local(".HelveticaNeueDeskInterface-Light"),
-       local(".LucidaGrandeUI"),
-       local("Ubuntu Light"),
-       local("Segoe UI Light"),
-       local("Roboto-Light"),
-       local("DroidSans"),
-       local("Tahoma");
-}
+// @font-face {
+//   font-family: system;
+//   font-style: normal;
+//   font-weight: 300;
+//   src: local(".SFNSText-Light"),
+//        local(".HelveticaNeueDeskInterface-Light"),
+//        local(".LucidaGrandeUI"),
+//        local("Ubuntu Light"),
+//        local("Segoe UI Light"),
+//        local("Roboto-Light"),
+//        local("DroidSans"),
+//        local("Tahoma");
+// }
 
 body {
-  font-family: "system";
+  font-family:var(--font-family-default);
 }
 body,
 button,
 input,
 select,
 textarea {
-    font: 100%/1.5 'system';
+    font: 100%/1.5 var(--font-family-default);
     color: var(--off-black);
 }
 
@@ -29,4 +29,8 @@ select,
 textarea {
     font-size: .99rem;
     line-height: 1rem;
+}
+
+p, li {
+  max-width: 75ch;
 }

@@ -1,0 +1,38 @@
+.image-block-single {
+    display:block;
+    position:relative;
+}
+
+.image-block-single__container {
+    padding: var(--baseline-medium) var(--baseline-medium);
+}
+
+
+//Modifier for medium size 
+
+.image-block-single--medium {
+    .image-block-single__container {
+        @media(min-width: 768px) {
+            @include column(8);
+        }
+    }
+}
+
+
+
+// Image block double 
+
+.image-block-double {
+    display:block;
+    position:relative;
+}
+
+.image-block-double__container {
+    display:flex;
+    flex-direction:row;
+}
+
+.image-block-double__image {
+    padding: var(--baseline-medium) var(--baseline-medium);
+    width:50%;
+}

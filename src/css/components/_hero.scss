@@ -1,0 +1,121 @@
+.home-hero {
+    background: var(--off-black);
+    color: var(--white);
+    height: 90vh;
+    overflow:hidden;
+    position:relative;
+    &:before {
+        border: 1px solid var(--dark-grey-2);
+        border-radius: 50%;
+        content:'';
+        height: 100vh;
+        position:absolute;
+        right: -30vh;
+        width: 100vh;
+    }
+    + * {
+        margin-top: -48px;
+    }
+}
+
+.home-hero__container {
+    // @include wrap;
+    align-content:stretch;
+    bottom: 0;
+    display:flex;
+    flex-direction:row;
+    left: var(--baseline-medium);
+    position:absolute;
+    right: var(--baseline-medium);
+    top:0;
+}
+
+.home-hero__content {
+    align-self:flex-start;
+    color: var(--white);
+    flex-grow: 1;
+    justify-content:flex-end;
+}
+
+.home-hero__heading {
+    // @include font-size-plus-1;
+    color: var(--light-grey-2);
+    // color: var(--brand);
+    font-weight: 400;
+    margin-top: var(--baseline-small);
+    text-align:right;
+}
+
+
+//Project hero ---------------
+.project-hero {
+    background: var(--light-grey-1);
+    color: var(--offblack);
+    margin-bottom: var(--baseline-xlarge);
+    overflow:hidden;
+    padding: 50vh var(--baseline-medium) var(--baseline-medium);
+    position:relative;
+}
+
+.project-hero__container {
+    // @include wrap;
+    display:block;
+    position:relative;
+}
+
+.project-hero__content {
+    align-self:flex-end;
+    color: var(--offblack);
+    flex-grow: 1;
+}
+
+.project-hero__heading {
+    @include font-size-plus-6;
+    color: var(--offblack);
+    font-weight: 300;
+    margin-bottom: var(--baseline-medium);
+}
+
+.project-hero__detail {
+    @media(min-width: 1024px) {
+        display:flex;
+        flex-direction:row;
+    }
+    .project-hero__description {
+        @media(min-width: 1024px) {
+            @include column(9);
+            padding-right: var(--baseline-large);
+        }
+    }
+    .project-hero__credits {
+        @media(min-width: 1024px) {
+            @include column(3);
+        }
+    }
+}
+
+.project-hero__credits {
+    @include font-size-minus-2;
+    padding-top: 3px;
+}
+
+.project-hero__credits-item {
+    display:block;
+    margin-bottom: var(--baseline-small);
+    span {
+        display:block;
+        font-weight: var(--semibold-weight);
+    }
+}
+
+
+//Intro ------------// 
+.intro {
+    background: var(--off-black);
+    color: var(--white);
+}
+
+.intro__content {
+    @include col;
+    padding-bottom: var(--baseline-xlarge);
+}
