@@ -46,6 +46,13 @@
     text-align:right;
 }
 
+.home-hero__intro {
+    @include font-size-plus-4;
+    color: var(--light-grey-2);
+    position:absolute;
+    top: 45vh;
+}
+
 
 //Project hero ---------------
 .project-hero {

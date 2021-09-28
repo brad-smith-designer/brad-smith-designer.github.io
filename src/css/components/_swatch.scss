@@ -1,0 +1,22 @@
+.swatch {
+    display:block;
+    margin: var(--baseline-large) 0;
+    position:relative;
+    @media(min-width: 768px) {
+        margin-left: var(--baseline);
+        margin-right: var(--baseline);
+    }
+    @media(min-width: 1024px) {
+        margin-left: var(--baseline-large);
+        margin-right: var(--baseline-large);
+    }
+}
+
+.swatch__item {
+    border-radius: 10px;
+    display:inline-block;
+    height: 70px;
+    margin-right: var(--baseline);
+    width: 70px;
+
+}

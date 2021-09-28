@@ -5,6 +5,7 @@
 }
 
 .projects__list {
+    @include col;
     display:block;
     padding-bottom: var(--baseline-large);
     margin-top: -24px;

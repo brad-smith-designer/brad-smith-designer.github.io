@@ -12,6 +12,10 @@
     margin-left: calc(var(--gutter)*-.5);
     margin-right: calc(var(--gutter)*-.5);
 }
+
+.row--alt {
+    align-items: flex-start;
+}
 .col {
     margin-left: calc(var(--gutter)*.5);
     margin-right: calc(var(--gutter)*.5);
