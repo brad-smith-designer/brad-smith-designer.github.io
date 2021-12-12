@@ -1,9 +1,17 @@
+.modal--open {
+    body {
+        height:100%;
+        margin:0;
+        overflow:hidden;
+    }
+}
+
 .modal {
     position: absolute;
     overflow: hidden;
     width:	0;
     height:0;
-    background-color: rgba(0,0,0,.9);
+    background-color: var(--off-black);
     top:0;
     text-align:center;
     left:0;
@@ -23,47 +31,63 @@
 }
 
 .modal__title { 
-    align-items:center;
-    border-bottom: 1px solid var(--light-grey-3);
-    display:flex;
-    font-weight: var(--semibold-weight);
-    height: 50px;
-    left: 0;
+    // align-items:center;
+    // border-bottom: 1px solid var(--light-grey-3);
+    // display:flex;
+    // font-weight: var(--semibold-weight);
+    // height: 50px;
+    // left: 0;
+    // padding-left: var(--baseline);
+    // position:absolute;
+    // top:0;
+    // width: calc(100% - 50px);
+    // z-index: 102;
+    // @media(min-width: 1024px) {
+    //     height: 60px;
+    //     width: calc(100% - 60px);
+    // }
+    @include font-size-plus-4;
+    color: var(--light-grey-2);
+    display:block;
     padding-left: var(--baseline);
-    position:absolute;
-    top:0;
-    width: calc(100% - 50px);
-    z-index: 102;
-    @media(min-width: 1024px) {
-        height: 60px;
-        width: calc(100% - 60px);
-    }
+    padding-top: var(--baseline);
+    position:relative;
+    text-align:left;
 }
 
 .modal__close-btn {
-    border-left: 1px solid var(--light-grey-3);
-    border-bottom: 1px solid var(--light-grey-3);
+    // border-left: 1px solid var(--light-grey-3);
+    // border-bottom: 1px solid var(--light-grey-3);
+    // background:none;
+    // // border-radius: 50%;
+    // height: 50px;
+    // padding: 12px 12px 8px 8px;
+    // position:absolute;
+    // right: 0;
+    // top: 0;
+    // width: 50px;
+    // z-index:100;
     background:none;
-    // border-radius: 50%;
-    height: 50px;
-    padding: 12px 12px 8px 8px;
+    border: 1px solid var(--white);
+    border-radius:50%;
+    height:50px;
     position:absolute;
-    right: 0;
-    top: 0;
-    width: 50px;
-    z-index:100;
+    right: var(--baseline);
+    top: calc(var(--baseline) + var(--baseline-xsmall));
+    width:50px;
     svg {
+        fill: var(--white);
         transition: 0.1s ease-in-out;
     }
-    &:before {
-        bottom: 0;
-        content:'';
-        left: 0;
-        position:fixed;
-        right: 0;
-        top:0;
-        z-index: -100;
-    }
+    // &:before {
+    //     bottom: 0;
+    //     content:'';
+    //     left: 0;
+    //     position:fixed;
+    //     right: 0;
+    //     top:0;
+    //     z-index: -100;
+    // }
     &:hover {
         // border: 1px solid var(--dark-grey-2);
         cursor: pointer;
@@ -79,18 +103,28 @@
 }
 
 .modal__inner {
-    background: var(--light-grey-1);
-    border-radius: 14px;
-    display:block;
-    height: 90vh;
-    overflow-y:auto;
+    // background: var(--light-grey-1);
+    // border-radius: 14px;
+    // display:block;
+    // height: 90vh;
+    // overflow-y:auto;
+    // margin: 0 auto;
+    // max-width: 800px;
+    // position: relative;
+    // text-align:left;
+    // top: 5vh;
+    // width: 90vw;
+    // z-index: 2;
+    bottom: 0;
+    // max-width: 800px;
     margin: 0 auto;
-    max-width: 800px;
-    position: relative;
+    left: 0;
+    overflow-y:auto;
+    padding: var(--baseline) 0;
+    position:fixed;
+    right: 0;
     text-align:left;
-    top: 5vh;
-    width: 90vw;
-    z-index: 2;
+    top: 0;
 }
 
 .modal__content-container {
@@ -103,18 +137,19 @@
 
 .modal__content {
     @include font-size-plus-1;
+    color: var(--light-grey-2);
     // margin-bottom: var(--baseline);
-    p {
+    // p {
         
-        @media(min-width: 768px) {
-            margin-left: var(--baseline);
-            margin-right: var(--baseline);
-        }
-        @media(min-width: 1024px) {
-            margin-left: var(--baseline-large);
-            margin-right: var(--baseline-large);
-        }
-    }
+    //     @media(min-width: 768px) {
+    //         margin-left: var(--baseline);
+    //         margin-right: var(--baseline);
+    //     }
+    //     @media(min-width: 1024px) {
+    //         margin-left: var(--baseline-large);
+    //         margin-right: var(--baseline-large);
+    //     }
+    // }
     p + p {
         margin-top: var(--baseline-small);
     }

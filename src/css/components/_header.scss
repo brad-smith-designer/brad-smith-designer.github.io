@@ -14,13 +14,13 @@
 }
 
 .header--project {
-    color: var(--offblack);
-    .nav__item {
-        color: var(--offblack);
-    }
-    .header__logo {
-        fill: var(--offblack);
-    }
+    color: var(--light-grey-1);
+//     .nav__item {
+//         color: var(--offblack);
+//     }
+//     .header__logo {
+//         fill: var(--offblack);
+//     }
 }
 
 .header__logo {
@@ -29,6 +29,7 @@
 }
 
 .header__container {
+    align-items:center;
     display:flex;
     flex-direction: row;
     justify-content:space-between;

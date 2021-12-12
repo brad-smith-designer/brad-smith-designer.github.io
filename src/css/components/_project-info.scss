@@ -1,0 +1,51 @@
+.project-info {
+    background: var(--dark-grey-3);
+    color: var(--light-grey-1);
+    display:block;
+    padding: var(--baseline);
+}
+
+.project-info__content {
+    @media(min-width: 768px) {
+        @include column(6);
+    }
+}
+
+//Description list ---------// 
+.project-info__list {
+    @include row;
+    @include font-size-minus-2;
+    display: block;
+    vertical-align:top;
+    dt, dd {
+        @include col;
+        @include column(6);
+        border-top: 1px solid var(--dark-grey-1);
+        display:inline-block;
+        padding: var(--baseline-small) 0 var(--baseline-small);
+        position:relative;
+        vertical-align:top;
+
+    }
+    dd {
+        font-weight: 600;
+    }
+    dd span {
+        @include font-size-minus-2;
+        display:block;
+        font-weight: 400;
+        margin-top: 4px;
+    }
+    dd {
+        &:before {
+            background: var(--dark-grey-1);
+            content: '';
+            height: 1px;
+            left: -24px;
+            position:absolute;
+            top: -1px;
+            width: 24px;
+        }
+    }
+
+}

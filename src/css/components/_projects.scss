@@ -17,6 +17,8 @@
     @include column(12);
     display:inline-block;
     margin-bottom: var(--gutter);
+    max-width:none;
+    vertical-align:top;
     @media(min-width: 768px) {
         @include column(6);
     }
@@ -25,6 +27,7 @@
 
 .projects__list-item-title {
     @include font-size-plus-2;
+    margin-bottom: var(--baseline-xsmall);
     // font-weight:  var(--medium-weight);
 }
 
@@ -38,8 +41,27 @@
     color: var(--white);
     display:block;
     letter-spacing: -0.04rem;
+    overflow:hidden;
     padding: var(--baseline) var(--baseline) var(--baseline-xlarge) var(--baseline); 
     position:relative;
     text-align:left;
+    text-decoration:none;
+    transition: all 0.15s ease-in-out;
     width:100%;
+    // &:before {
+    //     background: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0));
+    //     content:'';
+    //     height: 1px;
+    //     left: 0;
+    //     pointer-events:none;
+    //     position:absolute;
+    //     right: 0;
+    //     top: 0;
+    //     transition: all 0.15s ease-in-out;
+    // }
+    // &:hover {
+    //     &:before {
+    //         right: -500px;
+    //     }
+    // }
 }

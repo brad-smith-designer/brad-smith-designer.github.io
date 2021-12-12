@@ -18,50 +18,37 @@ const HomePage = () => <DefaultLayout section={'Home'}>
     <div class="home-hero">
         <div class="home-hero__container">
             <div class="home-hero__content">
-                <h1 class="home-hero__heading">Design and art direction</h1>
-                <p class="home-hero__intro">I'm a digital designer with a focus on clarity and usability.</p>
+                {/* <h1 class="home-hero__heading">Design and art direction</h1> */}
+                <h1 class="home-hero__intro">I design websites, apps and services at StormID<br/> with a focus on simplicity, usability and accessibility.</h1>
             </div>
         </div>
     </div>
-
-    {/* <div class="intro">
-        <div class="wrap">
-            <div class="intro__content">
-                <p>I'm a digital designer with a focus on clarity and usability.</p>
-            </div>
-        </div>
-    </div> */}
 
     <div class="projects">
         <ul class="projects__list">
             <li class="projects__list-item">
-                <button href="#" class="js-modal-toggler-1 projects__list-item-trigger">
+                <a href="/scts" class="projects__list-item-trigger">
+                    <h2 class="projects__list-item-title">Scottish Courts and Tribunals Service</h2>
+                    <span class="projects__list-item-year">2020</span>
+                </a>
+            </li>
+            <li class="projects__list-item">
+                <a href="/edinburgh-castle" class="projects__list-item-trigger">
                     <h2 class="projects__list-item-title">Edinburgh Castle</h2>
                     <span class="projects__list-item-year">2018</span>
-                </button>
+                    
+                </a>
             </li>
-            <li class="projects__list-item">
-                <button href="#" class="js-modal-toggler-2 projects__list-item-trigger">
+            {/* <li class="projects__list-item">
+                <a href="/glasgow-life" class="projects__list-item-trigger">
                     <h2 class="projects__list-item-title">Glasgow Life</h2>
                     <span class="projects__list-item-year">2017</span>
-                </button>
-            </li>
-            <li class="projects__list-item">
-                <button href="#" class="js-modal-toggler-2 projects__list-item-trigger">
-                    <h2 class="projects__list-item-title">Scottish Courts and Tribunals</h2>
-                    <span class="projects__list-item-year">2021</span>
-                </button>
-            </li>
-            <li class="projects__list-item">
-                <button href="#" class="js-modal-toggler-2 projects__list-item-trigger">
-                    <h2 class="projects__list-item-title">Celtic Connections</h2>
-                    <span class="projects__list-item-year">2019</span>
-                </button>
-            </li>
+                </a>
+            </li> */}
         </ul>
     </div>
 
-    <Modal id="js-modal-toggler-1" modalTitle="Edinburgh Castle" initClass="js-modal modal">
+    {/* <Modal id="js-modal-toggler-1" modalTitle="Edinburgh Castle" initClass="js-modal modal">
         <div class="modal__content">
             <p>At StormID I was tasked with leading the design for the new marketing website for the popular tourist destination, Edinburgh Castle. </p>   
             <figure class="modal__image">
@@ -146,7 +133,7 @@ const HomePage = () => <DefaultLayout section={'Home'}>
                 <dd>Jason Kennedy <span>Creative Director</span></dd>
             </dl> 
         </div>
-    </Modal>
+    </Modal> */}
     
 {/* 
     <ProjectBlockImageLeft modifier={''} image={'/static/img/hemp-eyewear/flatlay-1-full.jpg'} link={'work/hemp-eyewear'} title={'Brand, campaign and website for Hemp Eyewear'}/> 

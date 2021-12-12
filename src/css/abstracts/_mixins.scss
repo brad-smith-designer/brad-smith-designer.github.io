@@ -18,15 +18,15 @@
 @mixin wrap {
     max-width: var(--max-container-width);
     margin:0 auto;
-    padding: 0 calc(var(--gutter)/2);
-        @media(min-width: var(--bp-sm)){
-            padding-left: var(--gutter);
-            padding-right: var(--gutter);
-        }
-        @media(min-width: calc(var(--max-container-width) + var(--gutter))){
-            padding-left: 0;
-            padding-right: 0;
-        }
+    // padding: 0 calc(var(--gutter)/2);
+        // @media(min-width: var(--bp-sm)){
+        //     // padding-left: var(--gutter);
+        //     // padding-right: var(--gutter);
+        // }
+        // @media(min-width: calc(var(--max-container-width) + var(--gutter))){
+        //     // padding-left: 0;
+        //     // padding-right: 0;
+        // }
 }
 
 @mixin wrap--wide {
@@ -76,6 +76,15 @@
 }
 
 //Typescale mixins -----//
+@mixin font-size-project-title {
+    font-size: var(--font-size-plus-6);
+    letter-spacing: -0.05rem;
+    line-height: 1.2;
+    @media(min-width: 1024px) {
+        font-size: var(--font-size-project-title);
+    }
+}
+
 @mixin font-size-plus-6 {
     font-size: var(--font-size-plus-6);
     letter-spacing: -0.05rem;
@@ -116,3 +125,14 @@
     font-size: var(--font-size-minus-2);
     line-height: 1.2;
 }
+
+@mixin maintain-ratio($ratio: 1 1) {
+    @if length($ratio) < 2 or length($ratio) > 2 {
+      @warn "$ratio must be a list with two values.";
+    }
+    $width: 100%;
+    $height: percentage(nth($ratio, 2) / nth($ratio, 1));
+    width: $width;
+    height: 0;
+    padding-bottom: $height;
+  }

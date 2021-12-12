@@ -1,0 +1,40 @@
+.list--positive {
+    li {
+        padding-left: var(--baseline-small);
+        position:relative;
+        &:before {
+            background: var(--white);
+            content:'';
+            height: 1px;
+            position:absolute;
+            left: 0;
+            top: 11px;
+            width: 9px;
+        }
+        &:after {
+            background: var(--white);
+            content:'';
+            height: 9px;
+            position:absolute;
+            left: 4px;
+            top: 7px;
+            width: 1px;
+        }
+    }
+}
+
+.list--negative {
+    li {
+        padding-left: var(--baseline-small);
+        position:relative;
+        &:before {
+            background: var(--white);
+            content:'';
+            height: 1px;
+            position:absolute;
+            left: 0;
+            top: 11px;
+            width: 9px;
+        }
+    }
+}

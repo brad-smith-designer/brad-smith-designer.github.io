@@ -1,11 +1,13 @@
 .nav {
     display:flex;
+    height:30px;
     flex-direction:row;
     justify-content:space-between;
     position:relative;
 }
 
 .nav__item {
+    background:none;
     color: var(--off-black);
     display:inline-block;
     margin-right: var(--baseline-medium);

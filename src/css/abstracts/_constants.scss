@@ -1,6 +1,8 @@
 :root {
     --font-family-default: 'Inter', sans-serif;
     
+    --font-size-project-title: 3rem; 
+
     --font-size-plus-6: 2.313rem; 
     --font-size-plus-5: 2.011rem; 
     --font-size-plus-4: 1.749rem; 
@@ -19,7 +21,7 @@
     --baseline-xlarge: 4.5rem;
     --baseline-xxlarge: 6rem;
     --gutter: 24px;
-    --max-container-width: 1200px;
+    --max-container-width: 1600px;
     
     --white: hsl(0, 0%, 100%);
     --light-grey-1: hsl(0, 0%, 96%);

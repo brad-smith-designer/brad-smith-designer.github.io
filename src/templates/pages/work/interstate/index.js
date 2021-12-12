@@ -1,8 +1,8 @@
 import { h } from 'preact';
 import DefaultLayout from '../../../layouts/default';
 import Header from '../../../components/header';
-import ImageBlockSingle from '../../../components/image-block-single';
-import ImageBlockDouble from '../../../components/image-block-double';
+import BlockSingle from '../../../components/block-single';
+import BlockDouble from '../../../components/block-double';
 
 
 export const title = 'Interstate';
@@ -34,7 +34,7 @@ const Project = () => <DefaultLayout section={'Project'}>
             </div>
         </div>
 
-        <ImageBlockDouble modifier={''} image1={'/static/img/interstate/constellations.jpg'} image2={'/static/img/interstate/keeps-me-alive.jpg'}/> 
+        <BlockDouble modifier={''} image1={'/static/img/interstate/constellations.jpg'} image2={'/static/img/interstate/keeps-me-alive.jpg'}/> 
 
 
     </div>

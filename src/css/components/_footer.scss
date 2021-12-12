@@ -1,0 +1,28 @@
+.footer {
+    @include font-size-minus-2;
+    background: var(--off-black);
+    // border-top: 1px solid var(--off-black);
+    display:block;
+    padding: var(--baseline-medium);
+    position:relative;
+    width: 100%;
+    z-index: 2;
+    * {
+        color: var(--light-grey-2);
+    }
+}
+
+.footer__contact {
+    display:block;
+    margin-bottom: var(--baseline-xsmall);
+    position:relative;
+}
+
+.footer__social {
+    display:block;
+    position:relative;
+    .footer__social-link {
+        display:inline-block;
+        margin-right: var(--baseline);
+    }
+}

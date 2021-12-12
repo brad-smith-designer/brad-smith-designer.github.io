@@ -1,0 +1,26 @@
+.scroller-tablet {
+    display:block;
+    position:relative;
+}
+
+
+.scroller-tablet__device {
+    @include maintain-ratio(3 4);
+    @include column(4);
+    border: 8px solid var(--off-black);
+    border-radius:14px;
+    display:inline-block;
+    overflow:hidden;
+    position:relative;
+}
+
+.scroller-tablet__figure {
+    @include maintain-ratio(3 4);
+    background:red;
+    display:inline-block;
+    overflow-y: scroll;
+    position:relative;
+
+}
+
+

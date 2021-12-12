@@ -1,8 +1,8 @@
 import { h } from 'preact';
 import DefaultLayout from '../../../layouts/default';
 import Header from '../../../components/header';
-import ImageBlockSingle from '../../../components/image-block-single';
-import ImageBlockDouble from '../../../components/image-block-double';
+import BlockSingle from '../../../components/block-single';
+import BlockDouble from '../../../components/block-double';
 
 
 export const title = 'Hemp Eyewear';
@@ -34,11 +34,11 @@ const Project = () => <DefaultLayout section={'Project'}>
             </div>
         </div>
 
-        <ImageBlockSingle modifier={''} image={'/static/img/hemp-eyewear/flatlay-1-full.jpg'}/> 
+        <BlockSingle modifier={''} image={'/static/img/hemp-eyewear/flatlay-1-full.jpg'}/> 
 
-        <ImageBlockSingle modifier={'image-block-single--medium'} image={'/static/img/hemp-eyewear/flatlay-1-full.jpg'}/> 
+        <BlockSingle modifier={'block-single--medium'} image={'/static/img/hemp-eyewear/flatlay-1-full.jpg'}/> 
 
-        <ImageBlockDouble modifier={''} image1={'/static/img/hemp-eyewear/flatlay-1-full.jpg'} image2={'/static/img/hemp-eyewear/flatlay-1-full.jpg'}/> 
+        <BlockDouble modifier={''} image1={'/static/img/hemp-eyewear/flatlay-1-full.jpg'} image2={'/static/img/hemp-eyewear/flatlay-1-full.jpg'}/> 
 
 
     </div>
