@@ -19,7 +19,7 @@ const HomePage = () => <DefaultLayout section={'Home'}>
         <div class="home-hero__container">
             <div class="home-hero__content">
                 {/* <h1 class="home-hero__heading">Design and art direction</h1> */}
-                <h1 class="home-hero__intro">I design websites, apps and services at StormID<br/> with a focus on simplicity, usability and accessibility.</h1>
+                <h1 class="home-hero__intro">I design websites, apps and services with a focus on simplicity, usability and accessibility.</h1>
             </div>
         </div>
     </div>
@@ -28,15 +28,14 @@ const HomePage = () => <DefaultLayout section={'Home'}>
         <ul class="projects__list">
             <li class="projects__list-item">
                 <a href="/scts" class="projects__list-item-trigger">
-                    <h2 class="projects__list-item-title">Scottish Courts and Tribunals Service</h2>
                     <span class="projects__list-item-year">2020</span>
+                    <h2 class="projects__list-item-title">Scottish Courts and Tribunals Service</h2>
                 </a>
             </li>
             <li class="projects__list-item">
                 <a href="/edinburgh-castle" class="projects__list-item-trigger">
-                    <h2 class="projects__list-item-title">Edinburgh Castle</h2>
                     <span class="projects__list-item-year">2018</span>
-                    
+                    <h2 class="projects__list-item-title">Edinburgh Castle</h2>
                 </a>
             </li>
             {/* <li class="projects__list-item">

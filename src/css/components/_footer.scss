@@ -1,9 +1,10 @@
 .footer {
-    @include font-size-minus-2;
+    // @include font-size-minus-2;
     background: var(--off-black);
-    // border-top: 1px solid var(--off-black);
+    border-top: 1px solid var(--dark-grey-2);
+    color: var(--light-grey-2);
     display:block;
-    padding: var(--baseline-medium);
+    padding: var(--baseline-large) var(--baseline);
     position:relative;
     width: 100%;
     z-index: 2;
@@ -14,7 +15,7 @@
 
 .footer__contact {
     display:block;
-    margin-bottom: var(--baseline-xsmall);
+    margin-bottom: var(--baseline-small);
     position:relative;
 }
 

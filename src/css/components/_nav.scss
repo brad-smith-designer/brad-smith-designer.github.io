@@ -8,11 +8,30 @@
 
 .nav__item {
     background:none;
-    color: var(--off-black);
+    color: var(--light-grey-2);
     display:inline-block;
     margin-right: var(--baseline-medium);
     position:relative;
+    transition: all .15s cubic-bezier(.25,.46,.45,.94);
     &:last-of-type {
         margin-right:0;
+    }
+    &:before {
+        background: var(--white);
+        bottom: 2px;
+        content: "";
+        height: 1px;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        transition: all .15s cubic-bezier(.25,.46,.45,.94);
+    }
+    &:hover {
+        color: var(--white);
+        &:before {
+            bottom: -4px;
+            opacity: 1;
+        }
     }
 }

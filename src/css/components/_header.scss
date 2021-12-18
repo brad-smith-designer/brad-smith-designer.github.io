@@ -22,9 +22,17 @@
 //         fill: var(--offblack);
 //     }
 }
+.header__logo-link {
+    &:hover {
+        .header__logo {
+            fill: var(--white);
+        }
+    }
+}
 
 .header__logo {
     fill: var(--light-grey-2);
+    transition: all 0.15s ease-in-out;
     width: 100px;
 }
 

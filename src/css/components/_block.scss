@@ -383,8 +383,8 @@
     max-width: 80ch;
     h2 {
         @include font-size-plus-2;
-        font-weight:600;
-        margin-bottom: var(--baseline-small);
+        // font-weight:600;
+        margin-bottom: var(--baseline);
         margin-top: var(--baseline-small);
     }
     p , ul{

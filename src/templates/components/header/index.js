@@ -6,7 +6,7 @@ import Modal from '../../components/modal';
 const Header = ({ modifier }) => <header class={`header ${modifier ? `${modifier}` : ''}`}>
 {
     <div class="header__container">
-        <a href="/">
+        <a href="/" class="header__logo-link">
             <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 303.52 180.81">
             <defs/>
             <g id="Layer_2" data-name="Layer 2">
