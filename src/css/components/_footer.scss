@@ -17,6 +17,10 @@
     display:block;
     margin-bottom: var(--baseline-small);
     position:relative;
+    .footer__social-link {
+        display:inline-block;
+        text-decoration:none;
+    }
 }
 
 .footer__social {
@@ -25,5 +29,6 @@
     .footer__social-link {
         display:inline-block;
         margin-right: var(--baseline);
+        text-decoration:none;
     }
 }

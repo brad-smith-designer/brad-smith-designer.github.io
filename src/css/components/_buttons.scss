@@ -1,21 +1,5 @@
-.nav {
-    display:flex;
-    height:30px;
-    flex-direction:row;
-    justify-content:space-between;
+.text-button {
     position:relative;
-}
-
-.nav__item {
-    background:none;
-    color: var(--light-grey-2);
-    display:inline-block;
-    margin-right: var(--baseline-medium);
-    position:relative;
-    transition: all .15s cubic-bezier(.25,.46,.45,.94);
-    &:last-of-type {
-        margin-right:0;
-    }
     &:before {
         background: var(--white);
         bottom: 1px;

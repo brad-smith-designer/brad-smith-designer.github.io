@@ -80,8 +80,13 @@
     font-size: var(--font-size-plus-6);
     letter-spacing: -0.05rem;
     line-height: 1.2;
+    @media(min-width: 768px) {
+        font-size: 4rem;
+        line-height: 1.1;
+    }
     @media(min-width: 1024px) {
         font-size: var(--font-size-project-title);
+        line-height: 1;
     }
 }
 
