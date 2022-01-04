@@ -76,7 +76,7 @@
     display:flex;
     height:50px;
     justify-content:center;
-    position:absolute;
+    position:fixed;
     right: var(--baseline);
     top: calc(var(--baseline) + var(--baseline-xsmall));
     width:50px;
@@ -137,7 +137,7 @@
     position:relative;
     margin-top: 60px;
     padding: var(--baseline-xlarge) var(--baseline) var(--baseline) var(--baseline);
-    z-index: 101;
+    // z-index: 101;
 }
 
 .modal__content {
@@ -158,14 +158,26 @@
     p + p {
         margin-top: var(--baseline-small);
     }
+    h2 {
+        @include font-size-plus-1;
+        font-weight: 500;
+        margin-bottom: var(--baseline-small);
+        margin-top: var(--baseline);
+    }
 }
 
 .modal__content-block {
-    background: white;
-    padding: var(--baseline) calc(1.25*var(--baseline));
-    min-height: 150px;
-    margin: 0 calc(-1*var(--baseline)) var(--baseline) calc(-1*var(--baseline));
+    display:block;
+    margin-bottom: var(--baseline-xlarge);
+    position:relative;
 }
+
+// .modal__content-block {
+//     background: white;
+//     padding: var(--baseline) calc(1.25*var(--baseline));
+//     min-height: 150px;
+//     margin: 0 calc(-1*var(--baseline)) var(--baseline) calc(-1*var(--baseline));
+// }
 
 .modal__buttons {
     > * {

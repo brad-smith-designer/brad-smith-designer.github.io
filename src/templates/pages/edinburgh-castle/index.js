@@ -27,6 +27,8 @@ const Project = () => <DefaultLayout section={'Project'}>
                     <div class="project-hero__detail">
                         <div class="project-hero__description">
                             <p>At StormID I was tasked with leading the design for the new marketing website for the popular tourist destination, Edinburgh Castle. </p>   
+                            <p>Particular attention was paid to the visit section to allow users to quickly find information like opening times, ticket prices, and how to get there.</p>
+                            <p>Whilst I kept to the existing colour scheme of white and red, some of the castle's more immersive experiences are treated in a darker, more exclusive feeling colour scheme. Typography was borrowed from the parent organisation Historic Environment Scotland.</p>
                         </div>
                         <dl class="project-hero__credits">
                             <dt>Agency</dt>
@@ -58,6 +60,10 @@ const Project = () => <DefaultLayout section={'Project'}>
         <BlockFull image={'/static/img/edinburgh-castle/elements.png'}/> 
 
         <BlockDouble figure1modifier={'block-double__figure--phone'} figure2modifier={'block-double__figure--phone'} image1={'/static/img/edinburgh-castle/mobile-itineraries.jpg'} image2={'/static/img/edinburgh-castle/mobile-explore.jpg'}/> 
+
+        <BlockFull image={'/static/img/edinburgh-castle/find-your-way.png'}/> 
+
+        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/edinburgh-castle/food-and-drink.png'}/> 
 
 
 

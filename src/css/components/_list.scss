@@ -38,3 +38,41 @@
         }
     }
 }
+
+.list--lined {
+    li {
+        border-top: 1px solid var(--dark-grey-2);
+        padding: var(--baseline-xsmall) 0;
+        position:relative;
+    }
+}
+
+.list--blocked {
+    position:relative;
+    &:before {
+        background: var(--off-black);
+        bottom: 0;
+        content:'';
+        left: -11px;
+        position:absolute;
+        top:0;
+        width: 3px;
+        z-index: 1;
+    }
+    li {
+        display:inline-block;
+        padding: var(--baseline-xsmall) var(--baseline-xsmall) var(--baseline-xsmall) 0; 
+        position:relative;
+        margin-bottom: var(--baseline-xsmall);
+        margin-right: var(--baseline-small);
+        &:before {
+            background: var(--dark-grey-2);
+            bottom: 0;
+            content:'';
+            left: -11px;
+            position:absolute;
+            top:0;
+            width: 1px;
+        }
+    }
+}

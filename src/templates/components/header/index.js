@@ -24,10 +24,49 @@ const Header = ({ modifier }) => <header class={`header ${modifier ? `${modifier
         </div>
         <Modal id="js-modal-toggler-1" modalTitle="About" initClass="js-modal modal">
             <div class="modal__content">
-                <p>I am a senior digital designer. For the last 5 years I've been a part of StormID, a digital transformation agency based in Leith, Edinburgh. For 4 years before that I was a part of a number of design agencies big and small, and even a small charity. My experience more recently covers public sector projects, digital healthcare applications, and design systems, all with a focus on usability and accessibility.</p>
-                <p>I write HTML and CSS, and have dabbled in JS. Writing frontend code for design is controversial but beneficial in my opinion. It allows me to think in terms of reusable components, directly influence the accessibility aspects of a project, make fixes to production code where needed, and speak the same language as frontend and backend developers.</p>
-                <p>Alongside the code, I use the likes of XD and Figma to create rapid high-fidelity prototypes to engage the client or users, and iterate quickly. For early ideation I use a pen and paper.</p>
-                <p>More work examples are available on request.</p>
+                <div class="modal__content-block">
+                    <p>I am a senior digital designer. For the last 5 years I've been a part of StormID, a digital transformation agency based in Leith, Edinburgh. For 4 years before that I was a part of a number of design agencies big and small, and even a small charity. My experience more recently covers public sector projects, digital healthcare applications, and design systems, all with a focus on usability and accessibility.</p>
+                    <p>I write HTML and CSS, and have dabbled in JS. Writing frontend code for design is controversial but beneficial in my opinion. It allows me to think in terms of reusable components, directly influence the accessibility aspects of a project, make fixes to production code where needed, and speak the same language as frontend and backend developers.</p>
+                    <p>Alongside the code, I use the likes of XD and Figma to create rapid high-fidelity prototypes to engage the client or users, and iterate quickly. For early ideation I use a pen and paper.</p>
+                    <p>More work examples are available on request.</p>
+                </div>
+                <div class="modal__content-block">
+                    <h2>I've studied:</h2>
+                    <ul class="list--lined">
+                        <li>edX - Introduction to Accessibility</li>
+                        <li>Udacity - Web Accessibility by Google</li>
+                        <li>Codecademy - Introduction to HTML, CSS and JS</li>
+                        <li>Glasgow Caledonian University - BA Hons Graphic Design for Digital Media</li>
+                        <li>City of Glasgow College - HND Design and Visual Communication</li>
+                    </ul>
+                </div>
+                <div class="modal__content-block">
+                    <h2>I've designed for:</h2>
+                    <ul class="list--blocked">
+                        <li>Historic Environment Scotland</li>
+                        <li>Edinburgh Castle</li>
+                        <li>Glasgow Life</li>
+                        <li>Youth Scotland</li>
+                        <li>Young Scot</li>
+                        <li>Celtic Connections</li>
+                        <li>Scottish Courts and Tribunals</li>
+                        <li>NHS Scotland</li>
+                        <li>Scottish Housing Regulator</li>
+                        <li>Drinking Water Quality Regulator</li>
+                        <li>Harrison Stevens</li>
+                        <li>Natwest</li>
+                        <li>Menzies Distribution</li>
+                        <li>Edinburgh Fringe</li>
+                        <li>Visit Scotland</li>
+                        <li>The Scottish Government</li>
+                        <li>Project Scotand</li>
+                        <li>Scottish Enterprise</li>
+                        <li>Northlink Ferries</li>
+                        <li>Hemp Eyewear</li>
+                        <li>Hemp MVMNT</li>
+                        <li>and many more...</li>
+                    </ul>
+                </div>
             </div>
         </Modal>
     </div>
