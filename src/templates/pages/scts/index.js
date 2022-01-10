@@ -50,7 +50,7 @@ const Project = () => <DefaultLayout section={'Project'}>
 
         <BlockFull figure1modifier={''} image={'/static/img/scts/components-5.png'}/> 
 
-        <div class="block-content">
+        <div class="js-scroll-point block-content">
             <div class="block-content__container">
                 <h2>Claim form</h2>
                 <p>The main user-facing output was the online form for submitting expense claims.</p>
@@ -67,7 +67,7 @@ const Project = () => <DefaultLayout section={'Project'}>
 
         <BlockDouble figure1modifier={'block-double__figure--full'} figure2modifier={'block-double__figure--full'} image1={'/static/img/scts/components-6.1.png'} image2={'/static/img/scts/components-6.2.png'}/> 
         
-        <div class="block-content">
+        <div class="js-scroll-point block-content">
             <div class="block-content__container">
                 <h2>Admin interface</h2>
                 <p>For the processing of claims there was a need for an admin interface. This borrows from the same component library as the claim service, with the addition of certain admin-specific patterns.</p>

@@ -21,6 +21,11 @@
         display:inline-block;
         text-decoration:none;
     }
+    &.is--scrolled-in {
+        -webkit-animation: slide-in-bottom 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-bottom 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-delay:0.2s;
+    }
 }
 
 .footer__social {
@@ -29,6 +34,19 @@
     .footer__social-link {
         display:inline-block;
         margin-right: var(--baseline);
+        position:relative;
         text-decoration:none;
+    }
+    &.is--scrolled-in {
+        .footer__social-link {
+            -webkit-animation: slide-in-bottom 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-bottom 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            &:nth-of-type(1) {
+                animation-delay:0.5s;
+            }
+            &:nth-of-type(2) {
+                animation-delay:0.6s;
+            }
+        }
     }
 }
