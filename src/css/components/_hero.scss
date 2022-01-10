@@ -48,6 +48,9 @@
 
 .home-hero__intro {
     @include font-size-plus-4;
+    -webkit-animation: slide-in-bottom 600ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 600ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    // animation-delay:0.3s;
     color: var(--light-grey-2);
     max-width: 768px;
     position:absolute;
@@ -78,6 +81,8 @@
 
 .project-hero__heading {
     @include font-size-project-title;
+    -webkit-animation: slide-in-bottom 600ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 600ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     // color: var(--offblack);
     // font-weight: 500;
     margin-bottom: var(--baseline);
@@ -92,6 +97,9 @@
         padding-top: var(--baseline);
     }
     .project-hero__description {
+        -webkit-animation: slide-in-bottom 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-bottom 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-delay: 0.3s;
         // border-top: 1px solid var(--dark-grey-3);
         padding-top: var(--baseline);
         padding-bottom: var(--baseline);
@@ -110,6 +118,9 @@
         }
     }
     .project-hero__credits {
+        -webkit-animation: slide-in-bottom 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-bottom 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-delay: 0.5s;
         // border-top: 1px solid var(--dark-grey-3);
         // border-left: 1px solid var(--dark-grey-3);
         padding: var(--baseline);

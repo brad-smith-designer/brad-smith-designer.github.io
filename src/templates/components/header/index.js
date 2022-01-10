@@ -46,8 +46,10 @@ const Header = ({ modifier }) => <header class={`header ${modifier ? `${modifier
                         <li>Historic Environment Scotland</li>
                         <li>Edinburgh Castle</li>
                         <li>Glasgow Life</li>
+                        <li>Abrdn</li>
                         <li>Youth Scotland</li>
                         <li>Young Scot</li>
+                        <li>Historic England</li>
                         <li>Celtic Connections</li>
                         <li>Scottish Courts and Tribunals</li>
                         <li>NHS Scotland</li>
@@ -59,6 +61,7 @@ const Header = ({ modifier }) => <header class={`header ${modifier ? `${modifier
                         <li>Edinburgh Fringe</li>
                         <li>Visit Scotland</li>
                         <li>The Scottish Government</li>
+                        <li>Wood Mackenzie</li>
                         <li>Project Scotand</li>
                         <li>Scottish Enterprise</li>
                         <li>Northlink Ferries</li>
