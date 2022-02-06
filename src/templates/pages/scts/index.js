@@ -44,11 +44,11 @@ const Project = () => <DefaultLayout section={'Project'}>
             </div>
         </div>
 
-        <BlockDouble figure1modifier={'block-double__figure--full'} figure2modifier={'block-double__figure--full'} image1={'/static/img/scts/components-1.png'} image2={'/static/img/scts/components-2.png'}/> 
+        <BlockDouble figure1modifier={'block-double__figure--full'} figure2modifier={'block-double__figure--full'} image1={'/static/img/scts/components-1.png'} image2={'/static/img/scts/components-2.png'} alt1={'Checkbox component states.'} alt2={'Text input component states.'}/> 
         
-        <BlockFull figure1modifier={''} image={'/static/img/scts/components-4.png'}/> 
+        <BlockFull figure1modifier={''} image={'/static/img/scts/components-4.png'} alt={"Design tokens like colours, font weights, font sizes, and spacers."}/> 
 
-        <BlockFull figure1modifier={''} image={'/static/img/scts/components-5.png'}/> 
+        <BlockFull figure1modifier={''} image={'/static/img/scts/components-5.png'} alt={"Variations on checkboxes, radio buttons, and text inputs. File uploader states and button states."}/> 
 
         <div class="js-scroll-point block-content">
             <div class="block-content__container">
@@ -60,12 +60,11 @@ const Project = () => <DefaultLayout section={'Project'}>
             </div>
         </div>
 
-        <BlockDouble figure1modifier={'block-double__figure--phone'} figure2modifier={'block-double__figure--phone'} image1={'/static/img/scts/claim-phone-1.png'} image2={'/static/img/scts/claim-phone-2.png'}/> 
-
+        <BlockDouble figure1modifier={'block-double__figure--phone'} figure2modifier={'block-double__figure--phone'} image1={'/static/img/scts/claim-phone-1.png'} image2={'/static/img/scts/claim-phone-2.png'} alt1={'Selecting journey for jury service or tribunal hearings.'} alt2={'Checkinh your tribunal.'}/> 
     
-        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/scts/desktop-1.png'}/> 
+        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/scts/desktop-1.png'} alt={'Loss of earnings claim.'}/> 
 
-        <BlockDouble figure1modifier={'block-double__figure--full'} figure2modifier={'block-double__figure--full'} image1={'/static/img/scts/components-6.1.png'} image2={'/static/img/scts/components-6.2.png'}/> 
+        <BlockDouble figure1modifier={'block-double__figure--full'} figure2modifier={'block-double__figure--full'} image1={'/static/img/scts/components-6.1.png'} image2={'/static/img/scts/components-6.2.png'} alt1={'Admin components for claim lists, notes, and search inputs.'} alt2={'Admin component states for claim lists.'}/> 
         
         <div class="js-scroll-point block-content">
             <div class="block-content__container">
@@ -76,9 +75,9 @@ const Project = () => <DefaultLayout section={'Project'}>
             </div>
         </div>
        
-        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/scts/filter-scroll.gif'}/> 
+        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/scts/filter-scroll.gif'} alt={'Admin claim list filters'}/> 
 
-        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/scts/claim-detail.png'}/> 
+        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/scts/claim-detail.png'} alt={'Admin claim detail.'}/> 
 
         {/* <div class="block-content">
             <div class="block-content__container">

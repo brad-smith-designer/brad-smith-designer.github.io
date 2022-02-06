@@ -33,7 +33,7 @@ const Header = ({ modifier }) => <header class={`header ${modifier ? `${modifier
                 <div class="modal__content-block">
                     <h2>I've studied:</h2>
                     <ul class="list--lined">
-                        <li>edX - Introduction to Accessibility</li>
+                        <li>edX - Introduction to Web Accessibility</li>
                         <li>Udacity - Web Accessibility by Google</li>
                         <li>Codecademy - Introduction to HTML, CSS and JS</li>
                         <li>Glasgow Caledonian University - BA Hons Graphic Design for Digital Media</li>

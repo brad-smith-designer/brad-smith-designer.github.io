@@ -43,9 +43,9 @@ const Project = () => <DefaultLayout section={'Project'}>
             </div>
         </div>
 
-        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/edinburgh-castle/home-1.jpg'}/> 
+        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/edinburgh-castle/home-1.jpg'} alt={'Homepage on tablet or small desktop.'}/> 
 
-        <BlockDouble figure1modifier={'block-double__figure--phone'} figure2modifier={'block-double__figure--phone'} image1={'/static/img/edinburgh-castle/mobile-home.jpg'} image2={'/static/img/edinburgh-castle/mobile-menu.jpg'}/> 
+        <BlockDouble figure1modifier={'block-double__figure--phone'} figure2modifier={'block-double__figure--phone'} image1={'/static/img/edinburgh-castle/mobile-home.jpg'} image2={'/static/img/edinburgh-castle/mobile-menu.jpg'} alt1={'Homepage on mobile.'} alt2={'Navigation on mobile.'}/> 
 
         {/* <BlockTriple modifier={'block-triple--phones'} image1={'/static/img/edinburgh-castle/tickets.png'} image2={'/static/img/edinburgh-castle/getting-here.png'} image3={'/static/img/edinburgh-castle/access.png'}/>  */}
 
@@ -57,9 +57,9 @@ const Project = () => <DefaultLayout section={'Project'}>
             </div>
         </div> */}
 
-        <BlockFull image={'/static/img/edinburgh-castle/elements.png'}/> 
+        <BlockFull image={'/static/img/edinburgh-castle/elements.png'} alt={'Various dark-theme UI elements.'}/> 
 
-        <BlockDouble figure1modifier={'block-double__figure--phone'} figure2modifier={'block-double__figure--phone'} image1={'/static/img/edinburgh-castle/mobile-itineraries.jpg'} image2={'/static/img/edinburgh-castle/mobile-explore.jpg'}/> 
+        <BlockDouble figure1modifier={'block-double__figure--phone'} figure2modifier={'block-double__figure--phone'} image1={'/static/img/edinburgh-castle/mobile-itineraries.jpg'} image2={'/static/img/edinburgh-castle/mobile-explore.jpg'} alt1={'Itineraries on mobile.'} alt2={'Castle highlights on mobile.'}/> 
 
         <BlockFull image={'/static/img/edinburgh-castle/find-your-way.png'}/> 
 
