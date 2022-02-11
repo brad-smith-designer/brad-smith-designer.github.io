@@ -5,13 +5,14 @@
     overflow:hidden;
     position:relative;
     &:before {
+        -webkit-animation: MovingShape1 20s ease infinite;
         border: 1px solid var(--dark-grey-2);
         border-radius: 50%;
         content:'';
-        height: 100vh;
+        height: 60vh;
         position:absolute;
-        right: -30vh;
-        width: 100vh;
+        // right: -30vh;
+        width: 60vh;
     }
     + * {
         margin-top: -48px;

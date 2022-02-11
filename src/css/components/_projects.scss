@@ -90,10 +90,19 @@
     //     transition: all 0.15s ease-in-out;
     // }
     &:hover {
+        -webkit-animation: BouncingProjectLink 0.4s ease 1;
         background: var(--dark-grey-2);
         transform: translateY(-3px);
         .projects__list-item-year {
             color: var(--white);
         }
+    }
+}
+
+//Modifier for using this block at bottom of project page. 
+.projects--extra {
+    padding-top: var(--baseline-xlarge);
+    .projects__list {
+        margin-top: 0;
     }
 }

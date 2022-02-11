@@ -95,6 +95,17 @@ const Project = () => <DefaultLayout section={'Project'}>
             </div>
         </div> */}
 
+    <div class="projects projects--extra">
+        <ul class="projects__list">
+            <li class="projects__list-item">
+                <a href="/edinburgh-castle" class="projects__list-item-trigger">
+                    <span class="projects__list-item-year">2018</span>
+                    <h2 class="projects__list-item-title">Edinburgh Castle</h2>
+                </a>
+            </li>
+        </ul>
+    </div>
+
 
 
     </div>

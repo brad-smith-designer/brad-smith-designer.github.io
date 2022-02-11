@@ -6,7 +6,7 @@ import Modal from '../../components/modal';
 const Header = ({ modifier }) => <header class={`header ${modifier ? `${modifier}` : ''}`}>
 {
     <div class="header__container">
-        <a href="/" class="header__logo-link">
+        <a href="/" class="header__logo-link" aria-label="Brad Smith Designer - home">
             <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 303.52 180.81">
             <defs/>
             <g id="Layer_2" data-name="Layer 2">
@@ -20,7 +20,7 @@ const Header = ({ modifier }) => <header class={`header ${modifier ? `${modifier
         <div class="nav">
             {/* <a href="#" class="nav__item">Work</a>
             <a href="#" class="nav__item">Blog</a> */}
-            <button href="#" class="js-modal-toggler-1 nav__item">About</button>
+            <button href="#" class="js-modal-toggler-1 nav__item"><span>About</span></button>
         </div>
         <Modal id="js-modal-toggler-1" modalTitle="About" initClass="js-modal modal">
             <div class="modal__content">

@@ -1,21 +1,31 @@
 .text-button {
     position:relative;
-    &:before {
-        background: var(--white);
-        bottom: 1px;
-        content: "";
-        height: 1px;
-        left: 0;
-        opacity: 0.5;
-        position: absolute;
-        right: 0;
-        transition: all .15s cubic-bezier(.25,.46,.45,.94);
+    span {
+        display:inline;
+        padding-bottom: 0; 
     }
-    &:hover {
+    // &:before {
+    //     background: var(--white);
+    //     bottom: 1px;
+    //     content: "";
+    //     height: 1px;
+    //     left: 0;
+    //     opacity: 0.5;
+    //     position: absolute;
+    //     right: 0;
+    //     transition: all .15s cubic-bezier(.25,.46,.45,.94);
+    // }
+    &:hover, &:focus {
         color: var(--white);
-        &:before {
-            bottom: -4px;
-            opacity: 1;
+        span {
+            border-bottom: 1px solid var(--white);
+            padding-bottom: 3px;
+            -webkit-animation: BouncingTextLink 0.3s ease 1;
+        }
+    }
+    &:active {
+        span {
+            padding-bottom: 1px;
         }
     }
 }

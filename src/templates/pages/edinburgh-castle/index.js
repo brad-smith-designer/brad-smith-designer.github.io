@@ -61,11 +61,20 @@ const Project = () => <DefaultLayout section={'Project'}>
 
         <BlockDouble figure1modifier={'block-double__figure--phone'} figure2modifier={'block-double__figure--phone'} image1={'/static/img/edinburgh-castle/mobile-itineraries.jpg'} image2={'/static/img/edinburgh-castle/mobile-explore.jpg'} alt1={'Itineraries on mobile.'} alt2={'Castle highlights on mobile.'}/> 
 
-        <BlockFull image={'/static/img/edinburgh-castle/find-your-way.png'}/> 
+        <BlockFull image={'/static/img/edinburgh-castle/find-your-way.png'} alt={'A full-width image panel on desktop.'}/> 
 
-        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/edinburgh-castle/food-and-drink.png'}/> 
+        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/edinburgh-castle/food-and-drink.png'} alt={'An image panel for food and drink at the castle.'}/> 
 
-
+        <div class="projects projects--extra">
+        <ul class="projects__list">
+            <li class="projects__list-item">
+                <a href="/scts" class="projects__list-item-trigger">
+                    <span class="projects__list-item-year">2020</span>
+                    <h2 class="projects__list-item-title">Scottish Courts and Tribunals Service</h2>
+                </a>
+            </li>
+        </ul>
+    </div>
 
 
 
