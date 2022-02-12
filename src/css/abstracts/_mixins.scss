@@ -194,3 +194,13 @@
       }
   }
   
+
+  //Shadows 
+
+  @mixin box-shadow-1 {
+      box-shadow: 0 3px 24px hsl(0,0,6.5%);
+  }
+
+  @mixin box-shadow-1--hover {
+    box-shadow: 0 5px 32px hsl(0,0,7%);
+}

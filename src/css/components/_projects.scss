@@ -64,6 +64,7 @@
 }
 
 .projects__list-item-trigger {
+    @include box-shadow-1;
     background: var(--dark-grey-3);
     border-radius: 14px;
     // box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
@@ -90,6 +91,7 @@
     //     transition: all 0.15s ease-in-out;
     // }
     &:hover {
+        @include box-shadow-1--hover;
         -webkit-animation: BouncingProjectLink 0.4s ease 1;
         background: var(--dark-grey-2);
         transform: translateY(-3px);
