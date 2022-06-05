@@ -31,16 +31,6 @@ const Header = ({ modifier }) => <header class={`header ${modifier ? `${modifier
                     <p>More work examples are available on request.</p>
                 </div>
                 <div class="modal__content-block">
-                    <h2>I've studied:</h2>
-                    <ul class="list--lined">
-                        <li>edX - Introduction to Web Accessibility</li>
-                        <li>Udacity - Web Accessibility by Google</li>
-                        <li>Codecademy - Introduction to HTML, CSS and JS</li>
-                        <li>Glasgow Caledonian University - BA Hons Graphic Design for Digital Media</li>
-                        <li>City of Glasgow College - HND Design and Visual Communication</li>
-                    </ul>
-                </div>
-                <div class="modal__content-block">
                     <h2>I've designed for:</h2>
                     <ul class="list--blocked">
                         <li>Historic Environment Scotland</li>
@@ -68,6 +58,16 @@ const Header = ({ modifier }) => <header class={`header ${modifier ? `${modifier
                         <li>Hemp Eyewear</li>
                         <li>Hemp MVMNT</li>
                         <li>and many more...</li>
+                    </ul>
+                </div>
+                <div class="modal__content-block">
+                    <h2>I've studied:</h2>
+                    <ul class="list--lined">
+                        <li>edX - Introduction to Web Accessibility</li>
+                        <li>Udacity - Web Accessibility by Google</li>
+                        <li>Codecademy - Introduction to HTML, CSS and JS</li>
+                        <li>Glasgow Caledonian University - BA Hons Graphic Design for Digital Media</li>
+                        <li>City of Glasgow College - HND Design and Visual Communication</li>
                     </ul>
                 </div>
             </div>

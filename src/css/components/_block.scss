@@ -26,7 +26,7 @@
     .block-single__image {
         border-radius: 20px;
         // border-radius: 2vh;
-        border: 6px solid var(--off-black);
+        // border: 6px solid var(--off-black);
         max-height: 80vh;
         width:auto;
         @media(min-width: 480px) {
@@ -45,7 +45,7 @@
     .block-single__image {
         border-radius: 20px;
         // border-radius: 4vh;
-        border: 6px solid var(--black);
+        // border: 6px solid var(--black);
         max-height: 80vh;
         width:auto;
         // @media(min-width: 480px) {
@@ -116,10 +116,68 @@
     }
 }
 
+//Modifier for image left content right
+
+.block-double--image-left, .block-double--image-right {
+    .block-double__container {
+        display:block;
+        @media(min-width: 768px) {
+            display:flex;
+            flex-direction:row;
+        }
+    }
+    .block-double__figure {
+        border-right:none;
+        width:100%;
+        @media(min-width: 768px) {
+            width:50%;
+        }
+    }
+    .block-double__content {
+        align-items:center;
+        color: var(--white);
+        // border: 1px solid red;
+        display:flex;
+        padding: var(--baseline);
+        width:100%;
+        @media(min-width: 768px) {
+            padding: var(--baseline-xlarge);
+            width:50%;
+        }
+        h2 {
+            @include font-size-plus-2;
+            // font-weight:600;
+            margin-bottom: var(--baseline);
+            margin-top: var(--baseline-small);
+        }
+        p , ul{
+            display:block;
+            margin-bottom: var(--baseline-xsmall);
+        }
+        &:last-child {
+            margin-bottom: var(--baseline-small);
+        }
+    }
+    .block-double__content-container {
+        display:block;
+    }
+}
+
+.block-double--image-right {
+    @media(min-width: 768px) {
+        .block-double__figure {
+            order:2;
+        }
+        .block-double__content {
+            order:1;
+        }
+    }
+}
+
 .block-double__figure--phone {
     .block-double__image {
         border-radius: 20px;
-        border: 6px solid var(--black);
+        // border: 6px solid var(--black);
         max-height: 80vh;
         width:auto;
         // @media(min-width: 768px) {
@@ -133,12 +191,12 @@
             border-radius: 28px;
 
         }
-        @media(min-width: 768px) {
-            border-radius: 32px;
-        }
-        @media(min-width: 1024px) {
-            border-radius: 40px;
-        }
+        // @media(min-width: 768px) {
+        //     border-radius: 32px;
+        // }
+        // @media(min-width: 1024px) {
+        //     border-radius: 40px;
+        // }
     }
 }
 
@@ -165,7 +223,7 @@
             }
             .block-double__image {
                 border-radius: 24px;
-                border: 6px solid var(--black);
+                // border: 6px solid var(--black);
             }
         }
         .block-double__figure:last-of-type {
@@ -212,7 +270,7 @@
             }
             .block-double__image {
                 border-radius: 24px;
-                border: 6px solid var(--black);
+                // border: 6px solid var(--black);
             }
         }
     }
@@ -261,7 +319,7 @@
 .block-single--tablet-landscape {
     .block-single__image {
         border-radius: 24px;
-        border: 6px solid var(--black);
+        // border: 6px solid var(--black);
         // border-left: 20px solid var(--off-black);
         // border-right: 20px solid var(--off-black);
     }
@@ -271,7 +329,7 @@
 .block-double--tablets {
     .block-double__image {
         border-radius: 24px;
-        border: 6px solid var(--black);
+        // border: 6px solid var(--black);
         // border-left: 20px solid var(--off-black);
         // border-right: 20px solid var(--off-black);
 
@@ -309,7 +367,7 @@
     }
     .block-double__image {
         border-radius: 24px;
-        border: 6px solid var(--black);
+        // border: 6px solid var(--black);
         height: 50vw;
         width:auto;
         @media(min-width: 768px) {
@@ -322,6 +380,8 @@
     }
     
 }
+
+
 
 //Modifier for 3 phones 
 .block-triple--phones {
@@ -360,7 +420,7 @@
     }
     .block-quadruple__image {
         border-radius: 24px;
-        border: 6px solid var(--black);
+        // border: 6px solid var(--black);
 
     }
 }
@@ -399,12 +459,29 @@
         @include font-size-plus-2;
         // font-weight:600;
         margin-bottom: var(--baseline);
-        margin-top: var(--baseline-small);
+        margin-top: var(--baseline-large);
     }
     p , ul{
         margin-bottom: var(--baseline-xsmall);
     }
     &:last-child {
         margin-bottom: var(--baseline-small);
+    }
+    ul {
+        padding-top: var(--baseline-xsmall);
+    }
+    li {
+        margin-bottom: var(--baseline-small);
+        padding-left: var(--baseline);
+        position:relative;
+        &:before {
+            background: var(--mid-grey-3);
+            content:'';
+            height: 1px;
+            left:0;
+            position:absolute;
+            top: 12px;
+            width: 16px;
+        }
     }
 }

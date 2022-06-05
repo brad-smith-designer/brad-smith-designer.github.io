@@ -21,13 +21,15 @@
 
 .home-hero__container {
     // @include wrap;
+    @include col;
+    @include column(12);
     align-content:stretch;
     bottom: 0;
     display:flex;
     flex-direction:row;
-    left: var(--baseline-medium);
-    position:absolute;
-    right: var(--baseline-medium);
+    // left: var(--baseline-medium);
+    position:relative;
+    // right: var(--baseline-medium);
     top:0;
 }
 
@@ -56,12 +58,20 @@
     max-width: 768px;
     position:absolute;
     top: 45vh;
+    span {
+        display:none;
+        height:0;
+        opacity:0;
+        width:0;
+        visibility:hidden;
+    }
 }
 
 
 //Project hero ---------------
 .project-hero {
     background: var(--off-black);
+    border-bottom: 1px solid var(--dark-grey-2);
     color: var(--light-grey-2);
     overflow:hidden;
     padding: calc(var(--baseline-xxlarge)*3) 0 var(--baseline-xxlarge);
@@ -71,6 +81,8 @@
 .project-hero__container {
     // @include wrap;
     display:block;
+    margin: 0 auto;
+    max-width: 80ch;
     position:relative;
 }
 
@@ -81,6 +93,7 @@
 }
 
 .project-hero__heading {
+    // @include font-size-project-title;
     @include font-size-project-title;
     -webkit-animation: slide-in-bottom 600ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-in-bottom 600ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -109,7 +122,7 @@
         @media(min-width: 1024px) {
             // @include column(9);
             padding-right: var(--baseline-xlarge);
-            width: 75%;
+            // width: 75%;
         }
         p {
             margin-bottom: var(--baseline-small);
