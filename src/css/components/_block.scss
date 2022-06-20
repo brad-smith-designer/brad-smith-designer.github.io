@@ -61,6 +61,12 @@
     }
 }
 
+.block-single__figure--narrow {
+    .block-single__image {
+        margin:0 auto;
+        max-width: 80ch;
+    }
+}
 
 
 //Modifier for medium size 
@@ -84,6 +90,7 @@
 // Image block full 
 
 .block-full {
+    background: var(--off-black);
     border-bottom: 1px solid var(--dark-grey-2);
     display:block;
     position:relative;
@@ -460,6 +467,11 @@
         // font-weight:600;
         margin-bottom: var(--baseline);
         margin-top: var(--baseline-large);
+    }
+    h3 {
+        @include font-size-plus-1;
+        margin-bottom: var(--baseline-small);
+        margin-top: var(--baseline);
     }
     p , ul{
         margin-bottom: var(--baseline-xsmall);

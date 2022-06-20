@@ -7,4 +7,4 @@ export const initStack = [
     Modal
 ];
 
-ScrollPoints.init('.js-scroll-point'); 
+// ScrollPoints.init('.js-scroll-point'); 
