@@ -4,6 +4,10 @@
     position:relative;
 }
 
+.projects--other {
+    padding-top: var(--baseline-xxlarge);
+}
+
 .projects__container {
     @include col;
     @include column(12);
@@ -45,6 +49,15 @@
         }
         .projects__list-item-title {
             animation-delay: 0.8s;
+        }
+    }
+    &:nth-of-type(3) {
+        animation-delay: 0.7s;
+        .projects__list-item-year {
+            animation-delay: 0.9s;
+        }
+        .projects__list-item-title {
+            animation-delay: 1s;
         }
     }
 

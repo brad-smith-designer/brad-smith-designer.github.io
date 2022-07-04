@@ -121,6 +121,10 @@
     &:first-of-type {
         border-right: 1px solid var(--dark-grey-2);
     }
+    .block-double__image {
+        align-self:center;
+        flex-grow:0;
+    }
 }
 
 //Modifier for image left content right
@@ -214,6 +218,17 @@
         width: 100%;
     }
 }
+
+.block-double__figure--small { 
+    .block-double__image {
+        align-self:center;
+        flex-grow:0;
+        max-height: 60vh;
+        max-width: 70%;
+        width:auto;
+    }
+}
+
 
 //Image block double with 1 tablet and 1 image
 .block-double--tablet-content {
@@ -472,6 +487,7 @@
         @include font-size-plus-1;
         margin-bottom: var(--baseline-small);
         margin-top: var(--baseline);
+        padding-top: var(--baselinr-xsmall);
     }
     p , ul{
         margin-bottom: var(--baseline-xsmall);
