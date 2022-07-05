@@ -90,7 +90,7 @@ const Project = () => <DefaultLayout section={'Project'}>
             </ul>
         </BlockContent>  
 
-        <BlockSingle figure1modifier={'block-single__figure--narrow'} image={'/static/img/tikkurila/user-profiles.png'} alt={"Captured client notes from a review of the old site."}/> 
+        <BlockSingle figure1modifier={'block-single__figure--narrow'} image={'/static/img/tikkurila/user-profiles.png'} alt={"A screenshot of the 4 user profiles used during our remote workship in Miro."}/> 
 
         <BlockContent>         
             <h2>Comparisons with the leading paint retailers</h2>
@@ -98,7 +98,7 @@ const Project = () => <DefaultLayout section={'Project'}>
             <p>This way the client could see the problem clearly - that users weren't given the chance to explore colours in anywhere near enough detail to make a purchase decision.</p>
         </BlockContent>  
         
-        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/comparisons.png'} alt={"Comparisons of key competitors colour to purchase journeys."}/> 
+        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/comparisons.png'} alt={"Comparisons of key competitors colour to purchase journeys with side-by-side screenshots."}/> 
 
 
 
@@ -114,7 +114,7 @@ const Project = () => <DefaultLayout section={'Project'}>
             </ul>
         </BlockContent>
 
-        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/add-to-cart-journey-old.png'} alt={""}/> 
+        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/add-to-cart-journey-old.png'} alt={"The add-to-cart journey of the old site shown in 5 mobile screenshots."}/> 
 
 
         <BlockContent>
@@ -124,14 +124,14 @@ const Project = () => <DefaultLayout section={'Project'}>
             <p>This allowed a more logical colour-first approach to shopping (below), where the user settles on a colour, can see the colour in-situ, choose a paint finish, choose a quantity of paint, and add to basket. </p>
         </BlockContent>
 
-        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/add-to-cart-journey-new.png'} alt={""}/> 
+        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/add-to-cart-journey-new.png'} alt={"The new product detail page, on mobile, showing the steps of a simplified add-to-cart journey."}/> 
 
-        <BlockImageRight figure1modifier={'block-double__figure--phone'} image1={'/static/img/tikkurila/paint-calculator.png'} alt1={""}>
+        <BlockImageRight figure1modifier={'block-double__figure--phone'} image1={'/static/img/tikkurila/paint-calculator.png'} alt1={"The paint calculator shown on mobile."}>
             <h2>A simple paint estimator</h2>
             <p>How much paint do I need? The old site had a hidiously complex paint calculator which required you to measure your walls, the doors and the windows. This one is much easier to use.</p>
         </BlockImageRight> 
 
-        <BlockImageLeft figure1modifier={'block-double__figure--phone'} image1={'/static/img/tikkurila/nav-mobile.png'} alt1={""}>
+        <BlockImageLeft figure1modifier={'block-double__figure--phone'} image1={'/static/img/tikkurila/nav-mobile.png'} alt1={"The simplified navigation shown on mobile."}>
             <h2>A new IA</h2>
             <p>Instead of the site being split 3 ways, now we have all of the content accessible to the same users on the same site. A section for professionals makes sure there is still somewhere to advertise to the trades. Existing trade customers are given a log in area to handle their unique order requirements.</p>
         </BlockImageLeft> 
@@ -141,11 +141,11 @@ const Project = () => <DefaultLayout section={'Project'}>
             <p>Assuming most users didn't know what specific colour they wanted before visiting the site, inspirational or guide content was very important. What's colours are on trend? What colour goes with what?</p>
         </BlockContent>
 
-        <BlockDouble figure1modifier={'block-double__figure--phone'} figure2modifier={'block-double__figure--phone'} image1={'/static/img/tikkurila/color-lp-mobile.png'} image2={'/static/img/tikkurila/color-lp-mobile-2.png'} alt1={''} alt2={''}/> 
+        <BlockDouble figure1modifier={'block-double__figure--phone'} figure2modifier={'block-double__figure--phone'} image1={'/static/img/tikkurila/color-lp-mobile.png'} image2={'/static/img/tikkurila/color-lp-mobile-2.png'} alt1={'The colour landing page for blue, shown on mobile, with a large hero image with in-situ blue paint in a bedroom.'} alt2={'The colour landing page for blue, shown on mobile, with this seasons most calming hue alongside in-situ images.'}/> 
 
-        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/tikkurila/color-lp-desktop.png'} alt={'The old site product detail page'}/> 
+        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/tikkurila/color-lp-desktop.png'} alt={'The colour landing page for blue, shown on desktop, featuring a blue called Atlantis alongside in-situ imagery.'}/> 
 
-        <BlockImageRight figure1modifier={'block-double__figure--small'} image1={'/static/img/tikkurila/prototype.png'} alt1={""}>
+        <BlockImageRight figure1modifier={'block-double__figure--small'} image1={'/static/img/tikkurila/prototype.png'} alt1={"A screenshot showing the extent of my small prototype in Adobe XD."}>
             <h2>A clickable prototype</h2>
             <p>I designed the key user flows for mobile, tablet and desktop, with enough detail to demonstrate the full navigation, and to show interctions like filtering and the add-to-cart journey.</p>
         </BlockImageRight> 
@@ -165,10 +165,10 @@ const Project = () => <DefaultLayout section={'Project'}>
             <p>As well as the wins, these sessions threw up some areas of the UI that could be refined. For example, the method of selecting a paint finish had a small label which was initially designed to look like a sliding scale. The problem was it looked interactive, when in fact it wasn't. I removed it for a clearer alternative.</p>
         </BlockContent>
 
-        <BlockDouble figure1modifier={'block-double__figure--small'} figure2modifier={'block-double__figure--small'} image1={'/static/img/tikkurila/finishes-1.png'} image2={'/static/img/tikkurila/finishes-2.png'} alt1={''} alt2={''}/> 
+        <BlockDouble figure1modifier={'block-double__figure--small'} figure2modifier={'block-double__figure--small'} image1={'/static/img/tikkurila/finishes-1.png'} image2={'/static/img/tikkurila/finishes-2.png'} alt1={'The finish selector cards before user feedback, showing a faux-slider label design.'} alt2={'The finish selector cards after user feedback, showing a more explicit label design.'}/> 
 
 
-        <BlockImageLeft figure1modifier={'block-double__figure--small'} image1={'/static/img/tikkurila/versions.jpg'} alt1={""}>
+        <BlockImageLeft figure1modifier={'block-double__figure--small'} image1={'/static/img/tikkurila/versions.jpg'} alt1={"A screenshot showing iterations of the Adobe XD file over a few weeks."}>
             <h2>Iteration</h2>
             <p>The prototype was constantly refined over a few weeks. After each iteration I'd gather the team together to review it, seeking feedback on specific features and facilitating discussions for wider issues. </p>
         </BlockImageLeft> 
@@ -178,22 +178,22 @@ const Project = () => <DefaultLayout section={'Project'}>
             <p>I made extra effort to open up the UI to achieve a more refined and aspirational look and feel. Spacing is more generous, white space is used, and imagery is given more real estate.</p>
         </BlockContent>
 
-        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/tikkurila/home-desktop.png'} alt={''}/> 
+        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/tikkurila/home-desktop.png'} alt={'The homepage, shown on desktop, featuring lots of white space and promotional imagery alongside titles and links to other areas of the site.'}/> 
 
         
-        <BlockImageRight figure1modifier={'block-double__figure--phone'} image1={'/static/img/tikkurila/plp-mobile.png'} alt1={""}>
+        <BlockImageRight figure1modifier={'block-double__figure--phone'} image1={'/static/img/tikkurila/plp-mobile.png'} alt1={"The product listing page, shown on mobile, featuring quick links to filtered pages above the main product list."}>
             <h2>A request from the SEO team</h2>
             <p>As part of efforts to improve the site's SEO performance, I was asked to ensure that PLPs included a series of 'quick links', to pages with pre-applied filters and unique URLs for popular searches. </p>
         </BlockImageRight> 
 
-        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/tikkurila/color-lp-desktop-2.png'} alt={''}/> 
+        <BlockSingle figure1modifier={'block-single__figure--desktop'} image={'/static/img/tikkurila/color-lp-desktop-2.png'} alt={'The colour landing page for blue, shown on desktop, featuring inspirational written content and large colour swatches.'}/> 
 
-        <BlockImageLeft figure1modifier={'block-double__figure--phone'} image1={'/static/img/tikkurila/article-mobile.png'} alt1={""}>
+        <BlockImageLeft figure1modifier={'block-double__figure--phone'} image1={'/static/img/tikkurila/article-mobile.png'} alt1={"A how-to article, shown on mobile, featuring small product link cards which can be used mid-content."}>
             <h2>Linking to products mid-content</h2>
             <p>The old site's content suggested the client would value the ability to feature products in the middle of articles, as they're mentioned. From a UX perspective this made sense, so I created a small version of the product card to use in the middle of rich text editors.</p>
         </BlockImageLeft> 
         
-        <BlockDouble figure1modifier={'block-double__figure--phone'} figure2modifier={'block-double__figure--phone'} image1={'/static/img/tikkurila/home-mobile.png'} image2={'/static/img/tikkurila/inspiration-mobile.png'} alt1={''} alt2={''}/> 
+        <BlockDouble figure1modifier={'block-double__figure--phone'} figure2modifier={'block-double__figure--phone'} image1={'/static/img/tikkurila/home-mobile.png'} image2={'/static/img/tikkurila/inspiration-mobile.png'} alt1={'The homepage hero, shown on mobile, featuring large in-situ colour imagery and a floating chat button.'} alt2={'The colour landing page for blue, shown on mobile, featuring a popular colour with colour swatch and in-situ imagery, along with colour pairings.'}/> 
 
         <BlockContent>         
             <h2>Handover</h2>
@@ -201,9 +201,9 @@ const Project = () => <DefaultLayout section={'Project'}>
             <p>After making sure the developers had access to Adobe XD, I used it to create a guide for whoever was writing the frontend. I included the measurements and rules I'd want to know if I were translating visuals to code.</p>
         </BlockContent>
 
-        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/guide-1.png'} alt={""}/> 
+        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/guide-1.png'} alt={"An example of one of the components with overlays showing measurements."}/> 
 
-        <BlockDouble figure1modifier={''} figure2modifier={''} image1={'/static/img/tikkurila/tile.png'} image2={'/static/img/tikkurila/guide-2.png'} alt1={''} alt2={''}/> 
+        <BlockDouble figure1modifier={''} figure2modifier={''} image1={'/static/img/tikkurila/tile.png'} image2={'/static/img/tikkurila/guide-2.png'} alt1={'A component breakdown showing the colour swatch with core colour and a textured overlay.'} alt2={'A form input component with overlays showing measurements.'}/> 
 
         <div class="projects projects--other"> 
             <div class="wrap">
