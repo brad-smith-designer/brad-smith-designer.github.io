@@ -73,7 +73,7 @@ const Project = () => <DefaultLayout section={'Project'}>
             
         </BlockContent>
 
-        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/old-site-details.png'} alt={"Some detail of the complicated old site, including 3-way site split and bewildering colour choice."}/> 
+        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/old-site-details.png'} alt={"Some detail of the complicated old site, including 3-way site split and bewildering colour choice."} caption={'Complicated nav, clunky colour picker, and bewildering colour choice.'}/> 
 
 
         <BlockContent>         
@@ -90,7 +90,7 @@ const Project = () => <DefaultLayout section={'Project'}>
             </ul>
         </BlockContent>  
 
-        <BlockSingle figure1modifier={'block-single__figure--narrow'} image={'/static/img/tikkurila/user-profiles.png'} alt={"A screenshot of the 4 user profiles used during our remote workship in Miro."}/> 
+        <BlockSingle figure1modifier={'block-single__figure--narrow'} image={'/static/img/tikkurila/user-profiles.png'} alt={"A screenshot of the 4 user profiles used during our remote workship in Miro."} caption={'A screenshot of user profiles in Miro.'}/> 
 
         <BlockContent>         
             <h2>Comparisons with the leading paint retailers</h2>
@@ -98,7 +98,7 @@ const Project = () => <DefaultLayout section={'Project'}>
             <p>This way the client could see the problem clearly - that users weren't given the chance to explore colours in anywhere near enough detail to make a purchase decision.</p>
         </BlockContent>  
         
-        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/comparisons.png'} alt={"Comparisons of key competitors colour to purchase journeys with side-by-side screenshots."}/> 
+        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/comparisons.png'} alt={"Comparisons of key competitors colour to purchase journeys with side-by-side screenshots."} caption={'Comparisons of key competitor sites during a workshop.'}/> 
 
 
 
@@ -114,7 +114,7 @@ const Project = () => <DefaultLayout section={'Project'}>
             </ul>
         </BlockContent>
 
-        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/add-to-cart-journey-old.png'} alt={"The add-to-cart journey of the old site shown in 5 mobile screenshots."}/> 
+        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/add-to-cart-journey-old.png'} alt={"The add-to-cart journey of the old site shown in 5 mobile screenshots."} caption={'The add-to-cart journey of the old site.'}/> 
 
 
         <BlockContent>
@@ -124,7 +124,7 @@ const Project = () => <DefaultLayout section={'Project'}>
             <p>This allowed a more logical colour-first approach to shopping (below), where the user settles on a colour, can see the colour in-situ, choose a paint finish, choose a quantity of paint, and add to basket. </p>
         </BlockContent>
 
-        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/add-to-cart-journey-new.png'} alt={"The new product detail page, on mobile, showing the steps of a simplified add-to-cart journey."}/> 
+        <BlockFull figure1modifier={''} image={'/static/img/tikkurila/add-to-cart-journey-new.png'} alt={"The new product detail page, on mobile, showing the steps of a simplified add-to-cart journey."} caption={'The add-to-cart journey of the new site.'}/> 
 
         <BlockImageRight figure1modifier={'block-double__figure--phone'} image1={'/static/img/tikkurila/paint-calculator.png'} alt1={"The paint calculator shown on mobile."}>
             <h2>A simple paint estimator</h2>

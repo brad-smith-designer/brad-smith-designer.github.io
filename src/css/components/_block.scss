@@ -12,13 +12,30 @@
 }
 
 .block-single__figure {
-    align-content:center;
+    align-items:center;
     display:flex;
+    flex-direction:column;
     justify-content:center;
     padding: var(--baseline-xxlarge) var(--baseline-medium);
+    position:relative;
     width:100%;
     .block-single__image {
-        max-height: 80vh;
+        align-self:center;
+        display:block;
+        // max-height: 80vh;
+        max-width:1024px;
+        position:relative;
+    }
+    .block-single__caption {
+        color: var(--light-grey-3);
+        margin:0 auto;
+        padding-left: var(--baseline-small);
+        padding-top: var(--baseline-small);
+        max-width: 1024px;
+        width:100%;
+        span {
+            @include font-size-minus-2;
+        }
     }
 }
 
@@ -46,8 +63,12 @@
         border-radius: 20px;
         // border-radius: 4vh;
         // border: 6px solid var(--black);
-        max-height: 80vh;
-        width:auto;
+        // max-height: 80vh;
+        display:block;
+        position:relative;
+        // max-width: 1024px;
+        width:100%;
+        // width:auto;
         // @media(min-width: 480px) {
         //     border-radius: 28px;
 
@@ -59,12 +80,27 @@
         //     border-radius: 40px;
         // }
     }
+    .block-single__caption {
+        margin:0 auto;
+        padding-left: var(--baseline-small);
+        padding-top: var(--baseline-small);
+        max-width: 1024px;
+        width:100%;
+        span {
+            @include font-size-minus-2;
+        }
+    }
 }
 
 .block-single__figure--narrow {
     .block-single__image {
         margin:0 auto;
         max-width: 80ch;
+    }
+    .block-single__caption {
+        margin:0 auto;
+        padding-left: var(--baseline-small);
+        width: 80ch;
     }
 }
 
@@ -90,10 +126,29 @@
 // Image block full 
 
 .block-full {
-    background: var(--off-black);
-    border-bottom: 1px solid var(--dark-grey-2);
+    background: var(--offblack);
     display:block;
     position:relative;
+}
+
+.block-full__figure {
+    position:relative;
+}
+
+.block-full__image {
+    border-bottom: 1px solid var(--dark-grey-2);
+}
+
+.block-full__caption {
+    @include font-size-minus-2;
+    background: var(--off-black);
+    bottom:calc(var(--baseline-large) * -1);
+    color: var(--light-grey-3);
+    left: var(--baseline-xsmall);
+    opacity: 0.9;
+    padding: var(--baseline-small) var(--baseline);
+    position:absolute;
+    z-index: 1
 }
 
 
@@ -156,7 +211,7 @@
             width:50%;
         }
         h2 {
-            @include font-size-plus-2;
+            @include font-size-plus-3;
             // font-weight:600;
             margin-bottom: var(--baseline);
             margin-top: var(--baseline-small);
@@ -478,19 +533,20 @@
     margin:0 auto;
     max-width: 80ch;
     h2 {
-        @include font-size-plus-2;
+        @include font-size-plus-3;
         // font-weight:600;
         margin-bottom: var(--baseline);
         margin-top: var(--baseline-large);
     }
     h3 {
-        @include font-size-plus-1;
+        @include font-size-plus-2;
+        // font-weight: 500;
         margin-bottom: var(--baseline-small);
-        margin-top: var(--baseline);
+        margin-top: var(--baseline-large);
         padding-top: var(--baselinr-xsmall);
     }
     p , ul{
-        margin-bottom: var(--baseline-xsmall);
+        margin-bottom: var(--baseline-small);
     }
     &:last-child {
         margin-bottom: var(--baseline-small);
@@ -513,3 +569,4 @@
         }
     }
 }
+

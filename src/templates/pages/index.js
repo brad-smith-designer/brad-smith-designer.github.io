@@ -15,7 +15,7 @@ const HomePage = () => <DefaultLayout section={'Home'}>
             <div class="wrap">
                 <div class="home-hero__container">
                     <div class="home-hero__content">
-                        <h1 class="home-hero__intro"><span>Brad Smith</span>I design digital experiences.</h1>
+                        <h1 class="home-hero__intro"><span>Brad Smith</span>I design websites, apps and services.</h1>
                     </div>
                 </div>
             </div>

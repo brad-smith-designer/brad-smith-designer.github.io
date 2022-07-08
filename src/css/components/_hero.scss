@@ -108,9 +108,10 @@
     @media(min-width: 1024px) {
         display:flex;
         flex-direction:row;
-        padding-top: var(--baseline);
+        // padding-top: var(--baseline);
     }
     .project-hero__description {
+        @include font-size-plus-1;
         -webkit-animation: slide-in-bottom 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: slide-in-bottom 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation-delay: 0.3s;
@@ -120,6 +121,7 @@
         // margin-bottom: var(--baseline-xlarge);
         padding: var(--baseline);
         @media(min-width: 1024px) {
+            @include font-size-plus-2;
             // @include column(9);
             padding-right: var(--baseline-xlarge);
             // width: 75%;
