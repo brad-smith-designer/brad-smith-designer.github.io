@@ -61,7 +61,7 @@ const Project = () => <DefaultLayout section={'Project'}>
 
         </BlockContent>
 
-        <BlockSingle figure1modifier={'block-single__figure--narrow'} image={'/static/img/boomday/profile-sketches.png'} alt={"Early sketches of the profile page."}/> 
+        <BlockSingle figure1modifier={'block-single__figure--narrow'} image={'/static/img/boomday/profile-sketches-light.png'} alt={"Early sketches of the profile page."}/> 
 
 
         <BlockContent>
@@ -80,15 +80,15 @@ const Project = () => <DefaultLayout section={'Project'}>
 
         <BlockFull image={'/static/img/boomday/fonts.png'} alt={"Versions of a profile page testing 5 different sans-serif fonts."}/> 
 
-        <BlockImageRight image1={'/static/img/boomday/icons.png'} alt1 ={"A selection of 15 custom outline icons for nav and UI interations."}>
+        <BlockImageRight modifier={'no-shadow'} image1={'/static/img/boomday/icons.png'} alt1 ={"A selection of 15 custom outline icons for nav and UI interations."}>
             <h2>Custom icons</h2>
             <p>I designed a set of simple icons for use in the UI, optically adjudsted around a base of 24 pixels and using a constant stroke width.</p>
         </BlockImageRight> 
 
-        <BlockImageLeft image1={'/static/img/boomday/type-scale.png'} alt1={"A example of the type scale showing 10 sizes from 12 pixels to 51 pixels."}>
+        <BlockImageLeft modifier={'no-shadow'} image1={'/static/img/boomday/type-scale.png'} alt1={"A example of the type scale showing 10 sizes from 12 pixels to 51 pixels."}>
             <h2>Type scale</h2>
             <p>I never design anything without a consistent type scale.</p>
-        </BlockImageLeft> 
+        </BlockImageLeft>  
 
         <BlockImageRight figure1modifier={'block-double__figure--phone'} image1={'/static/img/boomday/feed.png'} alt1={"A phone screen showing the feed page, with challenges at the top and a feed of video cards which scrolls downwards"}> 
             <h2>Feed</h2>
@@ -134,7 +134,7 @@ const Project = () => <DefaultLayout section={'Project'}>
             <p>My personal recommendation was for the larger one further down, with the broken-up, distorted type and gritty imagery. This captured the essence of the subject matter - the hard work, sweat, and rewards - whilst making use of the 'boom' exclamation used playfully throughout the product.</p>
         </BlockContent>
 
-        <BlockSingle figure1modifier={'block-single__figure--narrow'} image={'/static/img/boomday/brand-1.jpg'} alt={"Branding options as shown to the client."}/> 
+        <BlockSingle modifier={'no-shadow'} figure1modifier={'block-single__figure--narrow'} image={'/static/img/boomday/brand-1.jpg'} alt={"Branding options as shown to the client."}/> 
 
         <BlockDouble figure1modifier={'block-double__figure--full'} figure2modifier={'block-double__figure--full'} image1={'/static/img/boomday/brand-phone.jpg'} image2={'/static/img/boomday/brand-ad.jpg'} alt1={'A phone image of the preferred branding option.'} alt2={'A bus stop advert showing the preferred branding option.'}/> 
 

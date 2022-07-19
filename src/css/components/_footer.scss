@@ -1,15 +1,18 @@
 .footer {
     // @include font-size-minus-2;
-    background: var(--off-black);
+    // background: var(--off-black);
+    background: var(--white);
     border-top: 1px solid var(--dark-grey-2);
-    color: var(--light-grey-2);
+    // color: var(--light-grey-2);
+    color: var(--off-black);
     display:block;
     padding: var(--baseline-large) var(--baseline);
     position:relative;
     width: 100%;
     z-index: 2;
     * {
-        color: var(--light-grey-2);
+        // color: var(--light-grey-2);
+        color: var(--off-black);
     }
 }
 

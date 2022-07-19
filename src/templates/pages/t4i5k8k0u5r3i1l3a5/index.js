@@ -90,7 +90,7 @@ const Project = () => <DefaultLayout section={'Project'}>
             </ul>
         </BlockContent>  
 
-        <BlockSingle figure1modifier={'block-single__figure--narrow'} image={'/static/img/tikkurila/user-profiles.png'} alt={"A screenshot of the 4 user profiles used during our remote workship in Miro."} caption={'A screenshot of user profiles in Miro.'}/> 
+        {/* <BlockSingle figure1modifier={'block-single__figure--narrow'} image={'/static/img/tikkurila/user-profiles.png'} alt={"A screenshot of the 4 user profiles used during our remote workship in Miro."} caption={'A screenshot of user profiles in Miro.'}/>  */}
 
         <BlockContent>         
             <h2>Comparisons with the leading paint retailers</h2>

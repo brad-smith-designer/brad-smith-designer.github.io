@@ -8,7 +8,8 @@
 
 .nav__item {
     background:none;
-    color: var(--light-grey-2);
+    // color: var(--light-grey-2);
+    color: var(--off-black);
     display:inline-block;
     margin-right: var(--baseline-medium);
     position:relative;
@@ -33,9 +34,11 @@
     //     transition: all .15s ease-in-out;
     // }
     &:hover {
-        color: var(--white);
+        // color: var(--white);
+        color: var(--black);
         span {
-            border-bottom: 1px solid var(--white);
+            // border-bottom: 1px solid var(--white);
+            border-bottom: 1px solid var(--black);
             padding-bottom: 3px;
             -webkit-animation: BouncingTextLink 0.3s ease 1;
         }

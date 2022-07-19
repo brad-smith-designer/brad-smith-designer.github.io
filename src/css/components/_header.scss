@@ -16,9 +16,11 @@
 }
 
 .header--home {
-    color: var(--white);
+    // color: var(--white);
+    color: var(--off-black);
     .nav__item {
-        color: var(--light-grey-2);
+        // color: var(--light-grey-2);
+        color: var(--off-black);
     }
 }
 
@@ -34,14 +36,16 @@
 .header__logo-link {
     &:hover {
         .header__logo {
-            fill: var(--white);
+            // fill: var(--white);
+            fill: var(--black);
         }
     }
 }
 
 .header__logo {
     display:block;
-    fill: var(--light-grey-2);
+    // fill: var(--light-grey-2);
+    fill: var(--off-black);
     position:relative;
     transition: all 0.15s ease-in-out;
     width: 100px;

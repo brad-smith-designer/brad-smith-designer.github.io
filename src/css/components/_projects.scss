@@ -1,5 +1,6 @@
 .projects {
-    background: var(--off-black);
+    // background: var(--off-black);
+    background: var(--white);
     display:block;
     position:relative;
 }
@@ -79,20 +80,23 @@
     @include font-size-baseline;
     -webkit-animation: slide-in-left 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-in-left 300ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    color: var(--mid-grey-1);
+    color: var(--mid-grey-3);
     display:block;
     position:relative;
     transition: all 0.15s ease-in-out;
 }
 
 .projects__list-item-trigger {
-    @include box-shadow-1;
+    @include box-shadow-2;
     align-items:stretch;
-    background: var(--dark-grey-3);
+    // background: var(--dark-grey-3);
+    background: var(--white);
     border-radius: 14px;
+    border: 1px solid hsl(0,0,95%);
     // box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
     // box-shadow: 0 2px 10px rgba(0 0 0 0.2);
-    color: var(--white);
+    // color: var(--white);
+    color: var(--off-black);
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -106,7 +110,8 @@
     width:100%;
     svg {
         align-self:center;
-        fill: var(--white);
+        // fill: var(--white);
+        fill: var(--dark-grey-2);
         transition: transform 0.2s ease;
     }
     .tip {
@@ -130,12 +135,13 @@
     }
     &:not(.locked) {
         &:hover {
-            @include box-shadow-1--hover;
+            @include box-shadow-2--hover;
             -webkit-animation: BouncingProjectLink 0.4s ease 1;
             background: var(--dark-grey-2);
+            background: var(--white);
             transform: translateY(-3px);
             .projects__list-item-year {
-                color: var(--white);
+                // color: var(--white);
             }
             svg {
                 transform: translateX(3px);
@@ -143,9 +149,15 @@
         }
     }
     &.locked {
+        .projects__list-item-title {
+            color: var(--mid-grey-2);
+            .projects__list-item-year {
+                color: var(--mid-grey-2);
+            }
+        }
         pointer-events:initial;
         &:before {
-            background: var(--off-black);
+            background: var(--white);
             bottom: 0;
             content:'';
             left: 0;

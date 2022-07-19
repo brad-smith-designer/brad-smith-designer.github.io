@@ -198,9 +198,24 @@
   //Shadows 
 
   @mixin box-shadow-1 {
-      box-shadow: 0 3px 24px hsl(0,0,6.5%);
+      box-shadow: 0 3px 24px hsl(0,0,7.5%);
   }
 
   @mixin box-shadow-1--hover {
-    box-shadow: 0 5px 32px hsl(0,0,7%);
+    box-shadow: 0 5px 32px hsl(0,0,8%);
+}
+
+@mixin box-shadow-2 {
+    box-shadow: 0 3px 24px hsl(0,0,92%);
+}
+
+@mixin box-shadow-2--hover {
+  box-shadow: 0 5px 32px hsl(0,0,93%);
+}
+
+@mixin box-shadow-image {
+    // border: 1px solid hsl(0,0,94.5%);
+    filter: drop-shadow(0 2px 6px hsl(0,0,91%)); 
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.1)); 
+
 }
