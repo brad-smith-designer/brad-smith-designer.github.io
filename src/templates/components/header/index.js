@@ -25,10 +25,12 @@ const Header = ({ modifier }) => <header class={`header ${modifier ? `${modifier
         <Modal id="js-modal-toggler-1" modalTitle="About" initClass="js-modal modal">
             <div class="modal__content">
                 <div class="modal__content-block">
-                    <p>I am a senior digital designer. For the last 5 years I've been a part of StormID, a digital transformation agency based in Leith, Edinburgh. For 4 years before that I was a part of a number of design agencies big and small, and even a small charity. My experience is broad, but more recently covers public sector services, digital healthcare applications, startups, and design systems.</p>
-                    <p>My work always values simplicity, usability and accessibility. I question almost everything, and I don't like to follow trends. I ask questions and try to get to the heart of the problem. Most of all I'm open-minded. </p>
-                    <p>My experience is predominently in UI, but I place huge importance on being involved at all stages of the design process, especially research.</p>
-                    <p>For early ideation I use a pen and paper. Alongside sketching I use the likes of XD and Figma to create rapid high-fidelity prototypes to engage the client, test with users, and iterate quickly. </p>
+                    <p>I'm a senior digital designer. Currently I design digital experiences for RBC Royal Bank in the heart of Toronto, on contract from Versett.</p>
+                    <p>My time is spent fully integrated with RBC's product and design team, part of multiple agile squads with different focusses. The work requires me to balance the needs of product team, the design team, and our clients whilst also contributing to the RBC design system and libraries.</p>
+                    {/* <p>I am a senior digital designer. For the last 5 years I've been a part of StormID, a digital transformation agency based in Leith, Edinburgh. For 4 years before that I was a part of a number of design agencies big and small, and even a small charity. My experience is broad, but more recently covers public sector services, digital healthcare applications, startups, and design systems.</p> */}
+                    <p>My work always values simplicity, usability and accessibility. I question everything, and I like to avoid trends. I ask questions and try to get to the heart of the problem. Most of all I'm open-minded. </p>
+                    <p>I've been designing for over 10 years. My experience is predominently in UI/UX, but I place huge importance on being involved at all stages of the design process, especially research and frontend implementation.</p>
+                    <p>For early ideation I use a pen and paper, and conversation. Alongside sketching I use the likes of XD and Figma to create rapid high-fidelity prototypes to engage stakeholders, test with users, and iterate quickly. </p>
                     <p>For more in-depth prototyping I write HTML and CSS, and occasionally JS where necessary. Writing frontend code for design is controversial but beneficial in my opinion. It allows me to think in terms of reusable components, directly influence the accessibility aspects of a project, make fixes to production code where needed, and speak the same language as frontend and backend developers.</p>
                     
                     <p>More work examples are available on request.</p>
@@ -36,6 +38,7 @@ const Header = ({ modifier }) => <header class={`header ${modifier ? `${modifier
                 <div class="modal__content-block">
                     <h2>I've designed for:</h2>
                     <ul class="list--blocked">
+                        <li>RBC Royal Bank</li>
                         <li>Historic Environment Scotland</li>
                         <li>Edinburgh Castle</li>
                         <li>Glasgow Life</li>
