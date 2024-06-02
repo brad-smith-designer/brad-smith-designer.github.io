@@ -94,7 +94,7 @@ const Project = () => <DefaultLayout section={'Project'}>
             <p>My personal process was very simple and looked a little like this:</p>
             <ul class="process">
                 <li>Group chat with collaborators via Slack or video call</li>
-                <li>Paper sketches for quickness and maximum input from non-creatives</li>
+                <li>Paper sketches for quickness and maximum input from stakeholders</li>
                 <li>Some XD screens for select areas to aid decision making</li>
                 <li>Flat HTML screens including A/B versions</li>
                 <li>Review with team, users, or stakeholders</li>
