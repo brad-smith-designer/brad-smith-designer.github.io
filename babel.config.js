@@ -48,4 +48,7 @@ module.exports = function (api) {
 		  ["module:fast-async", { "spec": true }]
 		]
 	}
+	
   };
+
+  

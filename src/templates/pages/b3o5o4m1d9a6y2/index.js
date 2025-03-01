@@ -118,7 +118,7 @@ const Project = () => <DefaultLayout section={'Project'}>
 
         <BlockContent>
             <h2>A web app</h2>
-            <p>Boomday would inlude a web app, which meant that every pattern, component and content type would need adapting to another format.</p>
+            <p>Boomday would include a web app, which meant that every pattern, component and content type would need adapting to another format.</p>
             <p>With the desktop view below I made a small change to the IA compared to mobile, including Services instead of Messages. This was used as a conversation starter for the client, for us consider what should be priority. </p>
         </BlockContent>
 

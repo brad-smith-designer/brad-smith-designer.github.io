@@ -8,3 +8,4 @@ export const initStack = [
 ];
 
 // ScrollPoints.init('.js-scroll-point'); 
+

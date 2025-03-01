@@ -3,6 +3,8 @@ var evaluate = require('eval');
 var path = require('path');
 var Promise = require('bluebird');
 
+
+
 function StaticSiteGeneratorWebpackPlugin(options) {
   options = options || {};
 
@@ -175,5 +177,6 @@ function addOptimizeAssetsHandler(compilation, callback) {
     compilation.plugin('optimize-assets', callback);
   }
 }
+
 
 module.exports = StaticSiteGeneratorWebpackPlugin;
